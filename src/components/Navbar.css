@@ -1,0 +1,148 @@
+.navbar {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  padding: 6px 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  transition: background 0.3s ease;
+
+}
+
+[data-theme="light"] .navbar {
+  background: rgba(255, 255, 255, 0.9);
+  color: #000;
+}
+[data-theme="light"] .nav-item{
+
+  color: #000;
+}
+
+.navbar-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  font-family: "Outfit", sans-serif;
+}
+
+.logo span {
+  background: linear-gradient(90deg, #6e00ff, #b366ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-links {
+  display: flex;
+  gap: 34px;
+  list-style: none;
+}
+
+.nav-item {
+  position: relative;
+  font-family: cursive;
+  color: #cccccc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-item:hover,
+.nav-item.active {
+  color: #697dd3;
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #3f8cff, #b366ff);
+  transition: width 0.3s ease;
+}
+
+.nav-item:hover::after,
+.nav-item.active::after {
+  width: 100%;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.theme-dropdown {
+  position: relative;
+}
+
+.theme-toggle {
+  background: #1a1a1a;
+  border: none;
+  color: #fff;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+[data-theme="light"] .theme-toggle {
+  background: #e0e0e0;
+  color: #000;
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  background: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: 5px 0;
+  width: 130px;
+  font-family: "Poppins", sans-serif;
+  z-index: 200;
+}
+
+.dropdown-menu div {
+  padding: 8px 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.dropdown-menu div:hover {
+  background: #2a2a2a;
+}
+
+.get-in-touch {
+  background: linear-gradient(90deg, #6e00ff, #b366ff);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+[data-theme="light"] .get-in-touch {
+  color: #fff;
+}

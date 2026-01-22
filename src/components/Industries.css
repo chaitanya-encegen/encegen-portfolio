@@ -1,0 +1,79 @@
+.industries-section {
+  padding: 70px 50px;
+  background: #06070f;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.industries-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.highlight-text {
+  background: linear-gradient(90deg, #8f4bff, #4dd4ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.industries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 30px;
+}
+
+.industry-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 30px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: 0.3s ease-in-out;
+  position: relative;
+}
+
+.industry-card:hover {
+  transform: translateY(-8px);
+  border-color: #8f4bff;
+  box-shadow: 0 0 25px rgba(143, 75, 255, 0.4);
+}
+
+.industry-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #8f4bff;
+}
+
+.industry-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.industry-desc {
+  font-size: 15px;
+  line-height: 1.6;
+  opacity: 0.85;
+  margin-bottom: 25px;
+}
+
+.industry-stat {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.stat-number {
+  font-size: 32px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #4dd4ff, #8f4bff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.stat-text {
+  opacity: 0.8;
+  font-size: 14px;
+}
