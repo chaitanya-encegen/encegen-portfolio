@@ -1,12 +1,7 @@
 import React, { useRef, useMemo } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-<<<<<<< HEAD
 // import { Points } from "@react-three/drei";
 // import * as THREE from "three";
-=======
-import { Points } from "@react-three/drei";
-import * as THREE from "three";
->>>>>>> 4a6010d6e2d1edbbb7c3419289de3ed1f7d8a92c
 
 function Particles({ count = 1200 }) {
   const ref = useRef();

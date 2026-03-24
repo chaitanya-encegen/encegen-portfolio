@@ -6,14 +6,11 @@
   padding-bottom: 25px;
  
 }
-<<<<<<< HEAD
 .footer-column ul li a {
   text-decoration: none;
   color: inherit;   /* keeps your existing text color */
 }
 
-=======
->>>>>>> 4a6010d6e2d1edbbb7c3419289de3ed1f7d8a92c
 
 .footer-container {
   display: grid;

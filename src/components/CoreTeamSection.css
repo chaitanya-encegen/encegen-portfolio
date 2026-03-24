@@ -142,18 +142,13 @@
 
 .excellence-item h4 {
   font-size: 1.8rem;
-<<<<<<< HEAD
   margin: 6px 0 2px ;
-=======
-  margin-top: 10px;
->>>>>>> 4a6010d6e2d1edbbb7c3419289de3ed1f7d8a92c
   color: #3b82f6;
 }
 
 .excellence-item span {
   font-size: 0.9rem;
   color: #c7c7d6;
-<<<<<<< HEAD
   display: block;
   margin: 0;
 }
@@ -166,10 +161,6 @@
   transition: 0.3s ease;
 }
 s
-=======
-}
-
->>>>>>> 4a6010d6e2d1edbbb7c3419289de3ed1f7d8a92c
 .ex-icon {
   width: 44px;
   height: 44px;

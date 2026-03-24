@@ -10,7 +10,6 @@ import {
 } from "react-icons/fi";
 
 export default function Industries() {
-<<<<<<< HEAD
  const industries = [
   {
     icon: <FiDollarSign />,
@@ -75,62 +74,6 @@ export default function Industries() {
       <div className="industries-grid">
         {industries.map((item, index) => (
           <div className="industry-card" key={index} style={{backgroundImage: `url(${item.bg})`}}>
-=======
-  const industries = [
-    {
-      icon: <FiDollarSign />,
-      title: "FinTech",
-      desc: "AI-powered financial solutions, payment gateways, fraud detection, and blockchain integration for modern banking.",
-      stat: "99.9%",
-      statText: "Transaction Accuracy",
-    },
-    {
-      icon: <FiHeart />,
-      title: "HealthTech",
-      desc: "Digital health platforms, telemedicine, AI diagnostics, and patient management systems for healthcare innovation.",
-      stat: "2M+",
-      statText: "Patient Records Managed",
-    },
-    {
-      icon: <FiHome />,
-      title: "Real Estate",
-      desc: "Smart property management, virtual tours, CRM systems, and AI-driven market analytics for real estate professionals.",
-      stat: "50K+",
-      statText: "Properties Listed",
-    },
-    {
-      icon: <FiBookOpen />,
-      title: "Education",
-      desc: "E-learning platforms, LMS solutions, AI tutoring, and digital transformation for educational institutions.",
-      stat: "100K+",
-      statText: "Students Empowered",
-    },
-    {
-      icon: <FiLayers />,
-      title: "Manufacturing",
-      desc: "IoT integration, predictive maintenance, supply chain optimization, and smart factory solutions.",
-      stat: "40%",
-      statText: "Efficiency Increase",
-    },
-    {
-      icon: <FiShoppingBag />,
-      title: "Retail & E-Commerce",
-      desc: "AI-powered recommendations, inventory management, omnichannel platforms, and customer analytics.",
-      stat: "3x",
-      statText: "Sales Growth",
-    },
-  ];
-
-  return (
-    <section className="industries-section">
-      <h2 className="industries-title">
-        Industries We <span className="highlight-text">Empower</span>
-      </h2>
-
-      <div className="industries-grid">
-        {industries.map((item, index) => (
-          <div className="industry-card" key={index}>
->>>>>>> 4a6010d6e2d1edbbb7c3419289de3ed1f7d8a92c
             <div className="industry-icon">{item.icon}</div>
             <h3>{item.title}</h3>
             <p className="industry-desc">{item.desc}</p>
@@ -142,7 +85,6 @@ export default function Industries() {
           </div>
         ))}
       </div>
-<<<<<<< HEAD
 
      <section className="industries-cta">
   <div className="cta-container">
@@ -175,8 +117,6 @@ export default function Industries() {
     </button>
   </div>
 </section>
-=======
->>>>>>> 4a6010d6e2d1edbbb7c3419289de3ed1f7d8a92c
     </section>
   );
 }

@@ -1,9 +1,5 @@
 import React from "react";
-<<<<<<< HEAD
 import { getLocoScroll } from "../animations/locomotive";
-=======
-import { getLocoScroll } from "../animations/locomotive"; 
->>>>>>> 4a6010d6e2d1edbbb7c3419289de3ed1f7d8a92c
 import {
   FaLinkedin,
   FaTwitter,
@@ -15,7 +11,6 @@ import {
   FaArrowUp,
 } from "react-icons/fa";
 import "./Footer.css";
-<<<<<<< HEAD
 import { Link } from "react-router-dom";
 
 export default function Footer() {
@@ -36,25 +31,6 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-container">
 
-=======
-
-export default function Footer() {
- const scrollToTop = () => {
-    // ✅ If LocomotiveScroll is active, use its scrollTo method
-    if (window.locoScroll) {
-      window.locoScroll.scrollTo(0, {
-        duration: 800,
-        disableLerp: false,
-      });
-    } else {
-      // ✅ Fallback for normal scroll
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
-  };
-  return (
-    <footer className="footer">
-      <div className="footer-container">
->>>>>>> 4a6010d6e2d1edbbb7c3419289de3ed1f7d8a92c
         {/* ===== Column 1 ===== */}
         <div className="footer-column">
           <h2 className="footer-logo">Encegen AI Labs</h2>
@@ -78,21 +54,9 @@ export default function Footer() {
           </div>
 
           <div className="footer-socials">
-<<<<<<< HEAD
             <a href="#"><FaLinkedin /></a>
             <a href="#"><FaTwitter /></a>
             <a href="#"><FaInstagram /></a>
-=======
-            <a href="#">
-              <FaLinkedin />
-            </a>
-            <a href="#">
-              <FaTwitter />
-            </a>
-            <a href="#">
-              <FaInstagram />
-            </a>
->>>>>>> 4a6010d6e2d1edbbb7c3419289de3ed1f7d8a92c
           </div>
         </div>
 
@@ -100,7 +64,6 @@ export default function Footer() {
         <div className="footer-column">
           <h3 className="footer-title">Quick Links</h3>
           <ul>
-<<<<<<< HEAD
             <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About</Link></li>
             <li><Link to="/services">Services</Link></li>
@@ -109,16 +72,6 @@ export default function Footer() {
             <li><Link to="/team">Team</Link></li>
             <li><Link to="/blog">Blog</Link></li>
             <li><Link to="/contact">Contact</Link></li>
-=======
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Industries</li>
-            <li>Portfolio</li>
-            <li>Team</li>
-            <li>Blog</li>
-            <li>Contact</li>
->>>>>>> 4a6010d6e2d1edbbb7c3419289de3ed1f7d8a92c
           </ul>
         </div>
 
@@ -142,13 +95,9 @@ export default function Footer() {
             Subscribe to our newsletter for the latest insights and updates.
           </p>
           <input type="email" placeholder="Enter your email" />
-<<<<<<< HEAD
           <button type="submit" className="subscribe-btn">
             Subscribe
           </button>
-=======
-          <button type="submit" className="subscribe-btn">Subscribe</button>
->>>>>>> 4a6010d6e2d1edbbb7c3419289de3ed1f7d8a92c
 
           <h4 className="industries-title">Industries</h4>
           <div className="industries-tags">

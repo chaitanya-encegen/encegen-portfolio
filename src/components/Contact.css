@@ -5,15 +5,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-<<<<<<< HEAD
-/* LIGHT THEME BASE */
-[data-theme="light"] .contact-page {
-  background: #f9fafc;
-  color: #111;
-}
-
-=======
->>>>>>> 4a6010d6e2d1edbbb7c3419289de3ed1f7d8a92c
 /* HERO */
 .contact-hero {
   text-align: center;
@@ -39,13 +30,6 @@
   line-height: 1.6;
 }
 
-<<<<<<< HEAD
-[data-theme="light"] .contact-hero p {
-  opacity: 0.6;
-}
-
-=======
->>>>>>> 4a6010d6e2d1edbbb7c3419289de3ed1f7d8a92c
 /* CONTENT */
 .contact-content {
   display: grid;
@@ -61,14 +45,6 @@
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-<<<<<<< HEAD
-[data-theme="light"] .contact-info {
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
-}
-
-=======
->>>>>>> 4a6010d6e2d1edbbb7c3419289de3ed1f7d8a92c
 .contact-info h3 {
   margin-bottom: 24px;
   font-size: 22px;
@@ -80,10 +56,6 @@
   margin-bottom: 18px; 
 }
 
-<<<<<<< HEAD
-/* FORM */
-=======
->>>>>>> 4a6010d6e2d1edbbb7c3419289de3ed1f7d8a92c
 .contact-form h3 {
   font-size: 22px;
 }
@@ -94,13 +66,6 @@
   font-size: 13px;
 }
 
-<<<<<<< HEAD
-[data-theme="light"] .contact-form p {
-  opacity: 0.6;
-}
-
-=======
->>>>>>> 4a6010d6e2d1edbbb7c3419289de3ed1f7d8a92c
 .form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -116,56 +81,30 @@ label {
   font-size: 12px;
   opacity: 0.8;
 }
+/* Fix Select Dropdown Text Visibility */
 
-<<<<<<< HEAD
-/* INPUTS */
-input,
-textarea,
 select {
-  width: 90%;
-=======
-input,
-select,
-textarea {
   width: 100%;
->>>>>>> 4a6010d6e2d1edbbb7c3419289de3ed1f7d8a92c
   margin-top: 6px;
   padding: 12px 14px;
   border-radius: 14px;
   border: 1px solid rgba(255, 255, 255, 0.15);
-<<<<<<< HEAD
   background: rgba(255, 255, 255, 0.03);
   color: #fff;
   font-size: 14px;
-  transition: 0.3s ease;
-}
-
-[data-theme="light"] input,
-[data-theme="light"] textarea,
-[data-theme="light"] select {
-  background: #fff;
-  color: #111;
-  border: 1px solid #d1d5db;
-}
-
-/* SELECT */
-select {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  transition: 0.3s ease;
 }
+
 
 select option {
   background-color: #0f111a;
   color: #fff;
 }
 
-[data-theme="light"] select option {
-  background-color: #fff;
-  color: #111;
-}
-
-/* FOCUS */
+/* Focus State */
 select:focus,
 input:focus,
 textarea:focus {
@@ -174,22 +113,23 @@ textarea:focus {
   box-shadow: 0 0 8px rgba(143, 75, 255, 0.5);
 }
 
-/* TEXTAREA */
-=======
+input,
+
+textarea {
+  width: 100%;
+  margin-top: 6px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
   background: transparent;
   color: #fff;
 }
 
->>>>>>> 4a6010d6e2d1edbbb7c3419289de3ed1f7d8a92c
 textarea {
   min-height: 120px;
   resize: none;
 }
 
-<<<<<<< HEAD
-/* BUTTON */
-=======
->>>>>>> 4a6010d6e2d1edbbb7c3419289de3ed1f7d8a92c
 .send-btn {
   margin-top: 24px;
   width: 100%;
@@ -202,10 +142,6 @@ textarea {
   font-size: 15px;
 }
 
-<<<<<<< HEAD
-/* PRIVACY */
-=======
->>>>>>> 4a6010d6e2d1edbbb7c3419289de3ed1f7d8a92c
 .privacy {
   margin-top: 12px;
   font-size: 11px;
@@ -213,13 +149,6 @@ textarea {
   text-align: center;
 }
 
-<<<<<<< HEAD
-[data-theme="light"] .privacy {
-  opacity: 0.6;
-}
-
-=======
->>>>>>> 4a6010d6e2d1edbbb7c3419289de3ed1f7d8a92c
 /* MAP */
 .contact-map {
   margin-top: 80px;
@@ -235,13 +164,6 @@ textarea {
   opacity: 0.8;
 }
 
-<<<<<<< HEAD
-[data-theme="light"] .contact-map p {
-  opacity: 0.6;
-}
-
-=======
->>>>>>> 4a6010d6e2d1edbbb7c3419289de3ed1f7d8a92c
 .contact-map iframe {
   margin-top: 20px;
   width: 100%;
@@ -256,11 +178,3 @@ textarea {
     grid-template-columns: 1fr;
   }
 }
-<<<<<<< HEAD
-
-/* ===== YOUR ADDED FIX ===== */
-[data-theme="light"] .stat-number {
-  filter: brightness(0.9);
-}
-=======
->>>>>>> 4a6010d6e2d1edbbb7c3419289de3ed1f7d8a92c
