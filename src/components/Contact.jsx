@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState } from "react";
 import "./Contact.css";
 import { FiMapPin, FiPhone, FiMail, FiClock } from "react-icons/fi";
@@ -60,6 +61,13 @@ export default function Contact() {
     });
   };
 
+=======
+import React from "react";
+import "./Contact.css";
+import { FiMapPin, FiPhone, FiMail, FiClock } from "react-icons/fi";
+
+export default function Contact() {
+>>>>>>> 4a6010d6e2d1edbbb7c3419289de3ed1f7d8a92c
   return (
     <section className="contact-page">
       {/* HERO */}
@@ -68,14 +76,22 @@ export default function Contact() {
           Get in <span>Touch</span>
         </h1>
         <p>
+<<<<<<< HEAD
           Ready to transform your business with AI-powered solutions?
           Let’s build something powerful together.
+=======
+          Ready to transform your business with AI-powered solutions? We’d love
+          to hear from you. Let’s discuss how we can help you achieve your goals.
+>>>>>>> 4a6010d6e2d1edbbb7c3419289de3ed1f7d8a92c
         </p>
       </div>
 
       {/* CONTENT */}
       <div className="contact-content">
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4a6010d6e2d1edbbb7c3419289de3ed1f7d8a92c
         {/* LEFT INFO */}
         <div className="contact-info">
           <h3>Contact Information</h3>
@@ -84,6 +100,7 @@ export default function Contact() {
             <FiMapPin />
             <div>
               <h4>Our Office</h4>
+<<<<<<< HEAD
             <p>
               Encegen AI Labs Pvt. Ltd.
               <br />
@@ -95,6 +112,15 @@ export default function Contact() {
               Maharashtra, India
             </p>
 
+=======
+              <p>
+                Hub Office No. 3,
+                <br />
+                Baner Road, Wakad
+                <br />
+                Pune – 412207, Maharashtra, India
+              </p>
+>>>>>>> 4a6010d6e2d1edbbb7c3419289de3ed1f7d8a92c
             </div>
           </div>
 
@@ -119,16 +145,34 @@ export default function Contact() {
             <FiClock />
             <div>
               <h4>Business Hours</h4>
+<<<<<<< HEAD
               <p>Mon – Fri: 9:00 AM – 6:00 PM</p>
               <p>Sat: 9:00 AM – 1:00 PM</p>
               <p>Sunday: Closed</p>
             </div>
           </div>
+=======
+              <p>Monday – Friday: 9:00 AM – 6:00 PM</p>
+              <p>Saturday: 9:00 AM – 1:00 PM</p>
+              <p>Sunday: Closed</p>
+            </div>
+          </div>
+
+          <div className="quick-response">
+            <h4>Quick Response Guarantee</h4>
+            <p>
+              We respond to all inquiries within 24 hours.  
+              For urgent matters, please call us directly at  
+              <strong> +91 7769888952</strong>.
+            </p>
+          </div>
+>>>>>>> 4a6010d6e2d1edbbb7c3419289de3ed1f7d8a92c
         </div>
 
         {/* RIGHT FORM */}
         <div className="contact-form">
           <h3>Send us a Message</h3>
+<<<<<<< HEAD
           <p>We’ll respond within 24 hours.</p>
 
           <form onSubmit={handleSubmit}>
@@ -153,12 +197,26 @@ export default function Contact() {
                   onChange={handleChange}
                   placeholder="your.email@company.com"
                 />
+=======
+          <p>Fill out the form below and we’ll get back to you soon.</p>
+
+          <form>
+            <div className="form-row">
+              <div>
+                <label>Full Name *</label>
+                <input type="text" placeholder="Enter your full name" />
+              </div>
+              <div>
+                <label>Email Address *</label>
+                <input type="email" placeholder="your.email@company.com" />
+>>>>>>> 4a6010d6e2d1edbbb7c3419289de3ed1f7d8a92c
               </div>
             </div>
 
             <div className="form-row">
               <div>
                 <label>Company Name</label>
+<<<<<<< HEAD
                 <input
                   type="text"
                   name="company"
@@ -177,17 +235,29 @@ export default function Contact() {
                   onChange={handleChange}
                   placeholder="Enter 10 digit number"
                 />
+=======
+                <input type="text" placeholder="Your company name" />
+              </div>
+              <div>
+                <label>Phone Number</label>
+                <input type="text" placeholder="+91 XXXXX XXXXX" />
+>>>>>>> 4a6010d6e2d1edbbb7c3419289de3ed1f7d8a92c
               </div>
             </div>
 
             <div className="form-row single">
               <label>Service of Interest</label>
+<<<<<<< HEAD
               <select
                 name="service"
                 value={formData.service}
                 onChange={handleChange}
               >
                 <option value="">Select a service</option>
+=======
+              <select>
+                <option>Select a service</option>
+>>>>>>> 4a6010d6e2d1edbbb7c3419289de3ed1f7d8a92c
                 <option>AI Solutions</option>
                 <option>Web Development</option>
                 <option>Mobile App Development</option>
@@ -198,6 +268,7 @@ export default function Contact() {
 
             <div className="form-row single">
               <label>Message *</label>
+<<<<<<< HEAD
               <textarea
                 name="message"
                 value={formData.message}
@@ -209,6 +280,19 @@ export default function Contact() {
             <button type="submit" className="send-btn">
                Send Message
             </button>
+=======
+              <textarea placeholder="Tell us about your project, requirements, or questions..." />
+            </div>
+
+            <button type="submit" className="send-btn">
+              ✈ Send Message
+            </button>
+
+            <p className="privacy">
+              By submitting this form, you agree to our privacy policy.  
+              We’ll only use your information to respond to your inquiry.
+            </p>
+>>>>>>> 4a6010d6e2d1edbbb7c3419289de3ed1f7d8a92c
           </form>
         </div>
       </div>
@@ -216,6 +300,7 @@ export default function Contact() {
       {/* MAP */}
       <div className="contact-map">
         <h3>Visit Our Office</h3>
+<<<<<<< HEAD
         <p>Located in Wagholi, Pune</p>
 
        <iframe
@@ -228,3 +313,16 @@ export default function Contact() {
     </section>
   );
 }
+=======
+        <p>Located in the heart of Pune’s tech hub, Wakad</p>
+
+        <iframe
+          title="office-map"
+          src="https://www.google.com/maps?q=Wakad%20Pune&output=embed"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </section>
+  );
+}
+>>>>>>> 4a6010d6e2d1edbbb7c3419289de3ed1f7d8a92c

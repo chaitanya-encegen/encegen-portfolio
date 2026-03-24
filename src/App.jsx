@@ -13,8 +13,12 @@ import { initLocomotive } from "./animations/locomotive";
 import { initScrollAnimations } from "./animations/scrollAnimations";
 import "./styles/animations.css";
 import "./styles/globals.css";
+<<<<<<< HEAD
 import ScrollToTop from "./components/ScrollToTop";
 import {Toaster} from "react-hot-toast";
+=======
+
+>>>>>>> 4a6010d6e2d1edbbb7c3419289de3ed1f7d8a92c
 export default function App() {
 useEffect(() => {
   const loco = initLocomotive();
@@ -30,8 +34,11 @@ useEffect(() => {
 
   return (
     <Router>
+<<<<<<< HEAD
       <Toaster position="top-right" reverseOrder={false} />
       <ScrollToTop />
+=======
+>>>>>>> 4a6010d6e2d1edbbb7c3419289de3ed1f7d8a92c
       <Navbar />
           <div data-scroll-container>
       <Routes>

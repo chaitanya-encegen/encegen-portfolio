@@ -55,6 +55,7 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
 }
+<<<<<<< HEAD
 
 :root {
   /* COLORS */
@@ -88,3 +89,5 @@ body {
 
   --btn-text: #ffffff;
 }
+=======
+>>>>>>> 4a6010d6e2d1edbbb7c3419289de3ed1f7d8a92c

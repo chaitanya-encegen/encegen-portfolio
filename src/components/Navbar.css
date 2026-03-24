@@ -13,10 +13,13 @@
   transition: background 0.3s ease;
 
 }
+<<<<<<< HEAD
 .logo-link {
   text-decoration: none;
   color: inherit;
 }
+=======
+>>>>>>> 4a6010d6e2d1edbbb7c3419289de3ed1f7d8a92c
 
 [data-theme="light"] .navbar {
   background: rgba(255, 255, 255, 0.9);
@@ -150,6 +153,7 @@
 [data-theme="light"] .get-in-touch {
   color: #fff;
 }
+<<<<<<< HEAD
 nav a {
   text-decoration: none;
   color: #c7c7d6;
@@ -170,3 +174,5 @@ nav a.active::after {
   height: 2px;
   background: linear-gradient(90deg, #3b82f6, #a855f7);
 }
+=======
+>>>>>>> 4a6010d6e2d1edbbb7c3419289de3ed1f7d8a92c
