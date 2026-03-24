@@ -31,7 +31,7 @@ export default function AboutSection({ showNavbar = false, previewOnly = false }
 
   return (
     <section className="about-page">
-      {showNavbar && <Navbar />}
+      
 
       {/* HERO */}
       <div className="about-hero">

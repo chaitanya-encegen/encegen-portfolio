@@ -2,6 +2,7 @@
 .about-page {
   font-family: 'Plus Jakarta Sans', sans-serif; /* keep as is */
   font-weight: 400;
+  margin-top: 90px;
   color: #c7c7d6; /* matches body text color in screenshot */
   line-height: 1.65;
 }
@@ -38,7 +39,7 @@
 .gradient-divider {
   height: 2px;
   max-width: 1200px;
-  margin: 60px auto;
+  margin: 30px auto;
   background: linear-gradient(90deg, transparent, #4f8cff, #b366ff, transparent);
 }
 
@@ -126,6 +127,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 26px;
+  margin-bottom: 60px;
 }
 
 .info-box {

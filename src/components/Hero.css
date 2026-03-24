@@ -1,15 +1,15 @@
 .hero-section {
   position: relative;
-  min-height: 100vh;
+  min-height: 120vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 0 20px;
   overflow: hidden;
-  background: radial-gradient(circle at 30% 40%, rgba(88, 101, 242, 0.15), transparent 40%),
+  /* background: radial-gradient(circle at 30% 40%, rgba(88, 101, 242, 0.15), transparent 40%),
               radial-gradient(circle at 70% 60%, rgba(179, 102, 255, 0.15), transparent 40%),
-              #070b1a;
+              #070b1a; */
   color: #fff;
 }
 

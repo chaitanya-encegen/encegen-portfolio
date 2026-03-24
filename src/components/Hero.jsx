@@ -10,7 +10,7 @@ import "./Hero.css";
 gsap.registerPlugin(ScrollTrigger);
 
 /* ================= STAT COMPONENT ================= */
-function Stat({ value, label, delay = 0 }) {
+function Stat({ value, label, delay = 9 }) {
   const ref = useRef();
 
   useEffect(() => {
