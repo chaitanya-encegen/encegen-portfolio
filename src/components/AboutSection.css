@@ -1,0 +1,346 @@
+/* ================= About Page ================= */
+.about-page {
+  font-family: 'Plus Jakarta Sans', sans-serif; /* keep as is */
+  font-weight: 400;
+  color: #c7c7d6; /* matches body text color in screenshot */
+  line-height: 1.65;
+}
+
+/* ================= HERO ================= */
+.about-hero {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 60px;
+  margin-top: 120px;
+}
+
+.about-hero h1 {
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+.about-hero h1 span {
+  background: linear-gradient(90deg, #4f8cff, #b366ff); /* hero gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  text-shadow: 0 0 25px rgba(123, 97, 255, 0.4); /* subtle glow */
+}
+
+.about-hero p {
+  font-weight: 400;
+  color: #c7c7d6;
+  line-height: 1.65;
+}
+
+
+/* ================= DIVIDER ================= */
+.gradient-divider {
+  height: 2px;
+  max-width: 1200px;
+  margin: 60px auto;
+  background: linear-gradient(90deg, transparent, #4f8cff, #b366ff, transparent);
+}
+
+/* ================= STORY + METRICS ================= */
+.about-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+  gap: 30px;
+}
+
+.story-card {
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  border-radius: 22px;
+  padding: 40px;
+  box-shadow: 0 0 40px rgba(79, 140, 255, 0.15);
+  transition: all 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.story-card h3 {
+  font-size: 1.6rem;
+  font-weight: 600; /* semi-bold like hero */
+  margin-bottom: 20px;
+}
+
+.story-card p {
+  font-weight: 400; /* body weight */
+  color: #c7c7d6;
+  line-height: 1.7;
+}
+
+/* ================= METRICS ================= */
+.metrics-card {
+  background: linear-gradient(135deg, #4f8cff, #b366ff);
+  border-radius: 22px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(179, 102, 255, 0.4);
+  transition: all 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.metrics-card h2 {
+  font-size: 3rem;
+  font-weight: 700; /* hero style */
+}
+
+.metrics-card span {
+  font-size: 1.05rem;
+  opacity: 0.9;
+}
+
+.metrics-line {
+  width: 60%;
+  height: 2px;
+  margin: 25px 0;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* ================= CARD HOVER ================= */
+.story-card:hover {
+  transform: translateY(-10px);
+  border: 1px solid rgba(79, 140, 255, 0.4);
+  box-shadow: 
+    0 20px 50px rgba(79, 140, 255, 0.25),
+    0 0 30px rgba(179, 102, 255, 0.2);
+}
+
+.metrics-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 
+    0 30px 60px rgba(179, 102, 255, 0.6),
+    0 0 40px rgba(79, 140, 255, 0.4);
+}
+
+/* ================= INFO GRID ================= */
+.info-grid {
+  max-width: 1200px;
+  margin: 80px auto 0;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 26px;
+}
+
+.info-box {
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  border-radius: 22px;
+  padding: 30px 20px;
+  text-align: center;
+  transition: all 0.35s ease;
+}
+
+.info-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(79, 140, 255, 0.2);
+}
+
+.icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 16px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #4f8cff, #b366ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+}
+
+.info-box h4 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.info-box p {
+  color: #b8b8c5;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* ================= CTA ================= */
+.cta,
+.about-cta {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.cta button,
+.learn-more-btn {
+  display: inline-block;
+  padding: 14px 40px;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #4f8cff, #b366ff);
+  color: #ffffff;
+  font-weight: 600; /* hero font weight */
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 10px 25px rgba(79, 140, 255, 0.3);
+}
+
+.cta button:hover,
+.learn-more-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(179, 102, 255, 0.4);
+}
+
+/* ================= CORE TEAM ================= */
+.core-team-name {
+  user-select: none;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (min-width: 1400px) {
+  .about-container,
+  .info-grid {
+    max-width: 1300px;
+  }
+
+  .about-hero h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .about-page {
+    padding: 80px 20px;
+  }
+
+  .about-hero h1 {
+    font-size: 2.8rem;
+  }
+
+  .story-card,
+  .metrics-card {
+    padding: 30px;
+  }
+
+  .metrics-card h2 {
+    font-size: 2.5rem;
+  }
+
+  .info-grid {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-page {
+    padding: 70px 16px;
+  }
+
+  .about-hero h1 {
+    font-size: 2.4rem;
+  }
+
+  .about-hero p {
+    font-size: 1rem;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .story-card,
+  .metrics-card {
+    padding: 25px;
+  }
+
+  .metrics-card h2 {
+    font-size: 2.2rem;
+  }
+
+  .info-grid {
+    margin-top: 60px;
+  }
+
+  .info-box {
+    padding: 25px 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-page {
+    padding: 60px 14px;
+  }
+
+  .about-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-hero p {
+    font-size: 0.95rem;
+  }
+
+  .story-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .story-card p,
+  .info-box p {
+    font-size: 0.85rem;
+  }
+
+  .metrics-card h2 {
+    font-size: 1.8rem;
+  }
+
+  .metrics-card span {
+    font-size: 0.9rem;
+  }
+
+  .info-box h4 {
+    font-size: 1rem;
+  }
+
+  .learn-more-btn {
+    padding: 12px 28px;
+    font-size: 0.9rem;
+  }
+}
+/* ================= ABOUT PAGE HERO STYLE ================= */
+.about-page h1,
+.about-page h2,
+.about-page h3 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700; /* match hero bold */
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+  color: #ffffff;
+  text-shadow: 0 0 25px rgba(123, 97, 255, 0.4);
+}
+
+/* Optional: apply gradient like hero span */
+.about-page h1 span,
+.about-page h2 span,
+.about-page h3 span {
+  background: linear-gradient(90deg, #4f8cff, #b366ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* Ensure body text keeps normal weight and color */
+.about-page p,
+.about-page li,
+.about-page span {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 400;
+  color: #c7c7d6;
+  line-height: 1.65;
+}

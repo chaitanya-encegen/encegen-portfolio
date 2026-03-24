@@ -1,0 +1,225 @@
+.hero-section {
+  position: relative;
+  min-height: 120vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  overflow: hidden;
+  /* background: radial-gradient(circle at 30% 40%, rgba(88, 101, 242, 0.15), transparent 40%),
+              radial-gradient(circle at 70% 60%, rgba(179, 102, 255, 0.15), transparent 40%),
+              #070b1a; */
+  color: #fff;
+  
+
+}
+
+[data-theme="light"] .hero-section {
+  background: rgba(255, 255, 255, 0.226);
+  color: #000;
+}
+
+
+/* Background Image */
+.hero-bg-image {
+    display: flex;
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.25;
+  z-index: -3;
+}
+
+/* 3D Background Layer */
+.hero-3d-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -10;
+
+
+  pointer-events: none;
+
+
+}
+
+/* 2D Particles Layer */
+.hero-particles {
+  position: absolute !important;
+  inset: 0;
+  z-index: -10;
+    pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  padding: 0 20px;
+}
+
+.hero-title {
+  font-size: 4.5rem;
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.5px;
+  margin-bottom: 20px;
+}
+
+.highlight-text {
+  background: linear-gradient(90deg, #4f8cff, #b366ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.btn-gradient,
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none; /* important */
+  justify-content: center;
+
+}
+
+.highlight-box {
+  background: linear-gradient(90deg, #4f8cff, #b366ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* Continuous glowing animation on “Intelligence” */
+.pulse-text {
+  animation: pulseGlow 2s infinite alternate ease-in-out;
+}
+@keyframes pulseGlow {
+  0% {
+    text-shadow: 0 0 10px #b366ff, 0 0 20px #3f8cff;
+  }
+  100% {
+    text-shadow: 0 0 20px #b366ff, 0 0 40px #3f8cff;
+  }
+}
+
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #a0a7c2;
+  max-width: 700px;
+  margin: 20px auto 0;
+  line-height: 1.6;
+}
+
+
+.hero-buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+.line{
+  display: block;
+  white-space: nowrap;
+}
+
+.btn-outline {
+  border: 1.5px solid #4f8cff;
+  background: transparent;
+  color: #4f8cff;
+  padding: 14px 40px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: #4f8cff;
+  color: #fff;
+}
+.btn-outline {
+  border: 2px solid #3f8cff;
+  background: transparent;
+  color: hsl(216, 84%, 49%);
+  padding: 12px 36px;
+  border-radius: 9px;
+  font-weight: 900;
+  font-family: cursive;
+  font-size: medium;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-gradient {
+  background: linear-gradient(90deg, #4f8cff, #b366ff);
+  color: #fff;
+  border: none;
+  padding: 14px 40px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.btn-gradient:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(123, 97, 255, 0.4);
+}
+
+.btn-outline:hover {
+  transform: scale(1.05);
+  background-color: #3f8cff;
+  color: #fff;
+}
+
+
+
+.stat-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-stats {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.stat-number {
+  font-size: 2.4rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #4f8cff, #b366ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.stat-label {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #8c93b5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.7rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-stats {
+    gap: 40px;
+  }
+}
+

@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Your custom CSS should come AFTER Tailwind imports */
+body {
+  font-family: "Poppins", sans-serif;
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 1.2s ease-out forwards;
+}
+
+html, body, #root {
+  height: 100%;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+/* Optional: custom extras */
+.highlight-box {
+  display: inline-block;
+  padding: 0.05rem 0.25rem;
+  border-radius: 6px;
+  box-shadow: 0 6px 28px rgba(99,102,241,0.22);
+}
+
+.stat-number {
+  font-weight: 800;
+  font-size: 2.25rem;
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 0.3px rgba(255,255,255,0.06);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+:root {
+  /* COLORS */
+  --bg-main: #070b1a;
+  --bg-soft: radial-gradient(circle at 30% 40%, rgba(88, 101, 242, 0.15), transparent 40%),
+              radial-gradient(circle at 70% 60%, rgba(179, 102, 255, 0.15), transparent 40%);
+
+  --text-main: #ffffff;
+  --text-sub: #a0a7c2;
+
+  --primary: #4f8cff;
+  --secondary: #b366ff;
+
+  --border-color: #3f8cff;
+
+  --btn-text: #ffffff;
+}
+
+/* LIGHT THEME */
+[data-theme="light"] {
+  --bg-main: #f5f7ff;
+  --bg-soft: none;
+
+  --text-main: #111111;
+  --text-sub: #555555;
+
+  --primary: #4f8cff;
+  --secondary: #7a5cff;
+
+  --border-color: #4f8cff;
+
+  --btn-text: #ffffff;
+}

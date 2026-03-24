@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+.portfolio-page {
+  background: #000;
+  padding: 60px 5%;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+[data-theme="light"] .portfolio-page{
+  background: rgba(255, 255, 255, 0.226);
+  color: #000;
+}
+
+
+/* HEADER */
+.portfolio-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.portfolio-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+[data-theme="light"] .portfolio-header h1 {
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.portfolio-header span {
+  background: linear-gradient(90deg, #8f4bff, #4dd4ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* FILTERS */
+.portfolio-filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.portfolio-filters button {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.3s ease;
+}
+
+.portfolio-filters button.active {
+  background: #3b82f6;
+  border: none;
+}
+
+/* GRID - EXACT 3 CARDS IN ROW */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* CARD */
+.portfolio-card {
+  background: #0b0c12;
+  border-radius: 20px;
+  border: 1px solid #1f2937;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-10px);
+  border-color: #3b82f6;
+}
+
+/* TOP GRADIENT SECTION */
+.card-top {
+  background: linear-gradient(135deg, #4dd4ff, #8f4bff);
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.year {
+  font-size: 40px;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: -2px;
+}
+
+.client {
+  font-size: 14px;
+  font-weight: 500;
+  opacity: .95;
+}
+
+/* OVERLAY ON HOVER */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(4px);
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: .3s ease;
+}
+
+.portfolio-card:hover .overlay {
+  opacity: 1;
+}
+
+.hover-btn {
+  background: #d946ef;
+  padding: 10px 24px;
+  border-radius: 12px;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+  transition: .3s;
+}
+
+/* CONTENT AREA */
+.card-content {
+  padding: 18px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.portfolio-card h3:hover {
+  color: #3b82f6;
+}
+
+.desc {
+  font-size: 14px;
+  color: #9ca3af;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* CARD HOVER EFFECT FOR TITLE */
+.portfolio-card:hover h3 {
+  color: #3b82f6;
+  transition: color 0.3s ease;
+}
+
+/* CARD HOVER EFFECT FOR LEARN MORE BUTTON */
+.portfolio-card:hover .learn-more {
+ 
+ background-color: #3b82f6;
+  transition: all 0.3s ease;
+}
+
+/* TECHNOLOGY PILLS (EXACT DESIGN) */
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 25px;
+}
+
+.tag-pill {
+  background: rgba(59, 130, 246, 0.1); /* Light blue transparent */
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  color: #60a5fa; /* Blue color */
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* FEATURES SECTION */
+.features-title {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.features-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 15px;
+  margin-bottom: 25px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.blue-dot {
+  width: 6px;
+  height: 6px;
+  background: #3b82f6;
+  border-radius: 50%;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+/* LEARN MORE BUTTON */
+.learn-more {
+  margin-top: auto;
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #1f2937;
+  background: #000;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .3s;
+  font-size: 14px;
+}
+
+.learn-more:hover {
+  background: #111;
+  border-color: #4b5563;
+}
+/* ===============================
+   PROJECT SUCCESS METRICS SECTION
+================================= */
+
+.success-metrics-wrapper {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.success-metrics {
+  width: 100%;
+  max-width: 1300px;
+  background: linear-gradient(135deg, #0c0f17, #141925);
+  border: 1px solid #1f2937;
+  border-radius: 24px;
+  padding: 40px 40px;
+  text-align: center;
+}
+
+.success-metrics h2 {
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.metrics-subtitle {
+  font-size: 14px;
+  color: #9ca3af;
+  margin-bottom: 35px;
+}
+
+/* GRID 4 ITEMS EXACT */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.metric-item h3 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #3b82f6;
+  margin-bottom: 6px;
+}
+
+.metric-item h4 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.metric-item span {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+  .metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25x;
+  }
+}
+
+@media (max-width: 600px) {
+  .metrics-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+}
