@@ -74,60 +74,76 @@
   border-color: #3b82f6;
 }
 
-/* TOP GRADIENT SECTION */
+/* CARD TOP WITH IMAGE */
 .card-top {
-  background: linear-gradient(135deg, #4dd4ff, #8f4bff);
-  height: 170px;
+  position: relative;
+  height: 180px;
+  border-radius: 16px 16px 0 0;
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+}
+
+/* DARK OVERLAY FOR READABILITY */
+.overlay-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.2),
+    rgba(0,0,0,0.7)
+  );
+  z-index: 1;
+}
+
+/* TEXT ABOVE IMAGE */
+.year,
+.client {
   position: relative;
+  z-index: 2;
+  color: #fff;
 }
 
 .year {
-  font-size: 40px;
-  font-weight: 800;
-  margin: 0;
-  letter-spacing: -2px;
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 
 .client {
-  font-size: 14px;
-  font-weight: 500;
-  opacity: .95;
+  font-size: 1rem;
+  opacity: 0.9;
 }
 
-/* OVERLAY ON HOVER */
+/* HOVER BUTTONS */
 .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(4px);
   display: flex;
-  gap: 15px;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  gap: 10px;
   opacity: 0;
-  transition: .3s ease;
+  transition: 0.3s;
+  z-index: 3;
 }
 
-.portfolio-card:hover .overlay {
+.card-top:hover .overlay {
   opacity: 1;
 }
 
+/* BUTTON STYLE */
 .hover-btn {
-  background: #d946ef;
-  padding: 10px 24px;
-  border-radius: 12px;
-  border: none;
-  font-weight: 600;
-  font-size: 14px;
-  color: #fff;
+  background: rgba(0,0,0,0.6);
+  border: 1px solid #fff;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: .3s;
 }
-
 /* CONTENT AREA */
 .card-content {
   padding: 18px;

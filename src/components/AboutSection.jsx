@@ -82,12 +82,12 @@ export default function AboutSection({ showNavbar = false, previewOnly = false }
                 className={`info-box ${visible ? "animate" : ""}`}
                 style={{ transitionDelay: `${index * 0.15}s` }}
               >
-       <div className="icon">
-  {title === "Mission" && <FaBullseye />}
-  {title === "Vision" && <FaEye />}
-  {title === "Values" && <FaBalanceScale />}
-  {title === "Team" && <FaUsers />}
-</div>
+                <div className="icon">
+                  {title === "Mission" && <FaBullseye />}
+                  {title === "Vision" && <FaEye />}
+                  {title === "Values" && <FaBalanceScale />}
+                  {title === "Team" && <FaUsers />}
+                </div>
                 <h4>{title}</h4>
                 <p>
                   {title === "Mission" &&

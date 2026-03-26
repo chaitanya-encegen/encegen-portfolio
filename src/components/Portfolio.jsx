@@ -15,7 +15,9 @@ const projects = [
     year: "2024",
     client: "RetailTech Solutions",
     title: "AI-Powered E-Commerce Platform",
+    
     desc: "Advanced e-commerce solution with AI-driven product recommendations and analytics.",
+    image: "/images/ecommerce.png",
     tags: ["React", "Python", "TensorFlow", "AWS"],
     features: [
       "Machine Learning Recommendations",
@@ -30,6 +32,7 @@ const projects = [
     client: "MediCare Group",
     title: "Smart Healthcare Management System",
     desc: "Comprehensive healthcare platform with patient management, telemedicine, and AI-assisted diagnosis features.",
+    image: "/images/healthcare.png",
     tags: ["Vue.js", "Node.js", "MongoDB", "Docker"],
     features: [
       "Patient Portal",
@@ -44,6 +47,7 @@ const projects = [
     client: "Digital Bank Pro",
     title: "FinTech Mobile Banking App",
     desc: "Secure mobile banking application with biometric authentication, real-time transactions, and financial analytics.",
+    image: "/images/banking.png",
     tags: ["React Native", "Node.js", "PostgreSQL", "Blockchain"],
     features: [
       "Biometric Authentication",
@@ -58,6 +62,7 @@ const projects = [
     client: "PropertyHub Inc",
     title: "Real Estate Property Portal",
     desc: "Modern listing platform with virtual tours and AI valuation.",
+    image: "/images/realestate.jpg",
     tags: ["Next.js", "Django", "PostgreSQL", "AWS S3"],
     features: [
       "Virtual Tours",
@@ -72,6 +77,7 @@ const projects = [
     client: "IndusTech Manufacturing",
     title: "Manufacturing IoT Dashboard",
     desc: "Industrial IoT solution  for manufacturing with real-time monitoring, predictive maintenance, and efficiency analytics.",
+    image: "/images/iot.jpg",
     tags: ["Angular", "Python", "InfluxDB", "Docker"],
     features: [
       "Real-Time Monitoring",
@@ -86,6 +92,7 @@ const projects = [
     client: "EduLearn Academy",
     title: "Educational Learning Platform",
     desc: "Interactive e-learning platform with AI-powered personalization learning paths and progress tracking.",
+    image: "/images/education.jpg",
     tags: ["React", "Express.js", "MySQL", "Socket.io"],
     features: [
       "Personalized Learning",
@@ -128,15 +135,20 @@ export default function Portfolio() {
         {filteredProjects.map((p, i) => (
           <div className="portfolio-card" key={i}>
             
-            <div className="card-top">
-              <div className="year">{p.year}</div>
-              <div className="client">{p.client}</div>
+         <div 
+  className="card-top"
+  style={{ backgroundImage: `url(${p.image})` }}
+>
+  <div className="overlay-bg"></div> {/* NEW */}
 
-              <div className="overlay">
-                <button className="hover-btn">View</button>
-                <button className="hover-btn">Code</button>
-              </div>
-            </div>
+  <div className="year">{p.year}</div>
+  <div className="client">{p.client}</div>
+
+  <div className="overlay">
+    <button className="hover-btn">View</button>
+    <button className="hover-btn">Code</button>
+  </div>
+</div>
 
             <div className="card-content">
               <h3>{p.title}</h3>

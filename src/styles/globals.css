@@ -55,3 +55,10 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
 }
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+}

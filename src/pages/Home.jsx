@@ -13,10 +13,7 @@ export default function Home() {
   return (
     <div className="relative min-h-screen overflow-hidden">
       {/* Global Background */}
-      <div
-        className="fixed inset-0 -z-20 bg-cover bg-center opacity-20"
-        style={{ backgroundImage: `url(${bg})` }}
-      />
+      
 
       {/* Global 3D Background */}
       <ThreeBackground />
