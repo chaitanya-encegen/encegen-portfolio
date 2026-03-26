@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./CoreTeamSection.css";
 import { FaEnvelope, FaLinkedinIn, FaUser } from "react-icons/fa";
+import { FaAward, FaUsers, FaStar, FaCalendarAlt } from "react-icons/fa";
 import { HiBadgeCheck } from "react-icons/hi";
 
 export default function CoreTeamSection() {
@@ -68,36 +69,40 @@ export default function CoreTeamSection() {
       </div>
 
       {/* Team Excellence */}
-      <div className="excellence-box">
-        <h3>Team Excellence</h3>
-        <p>Our team's collective expertise and achievements</p>
+ {/* Team Excellence */}
+<div className="excellence-box">
+  <h3>Team Excellence</h3>
+  <p>Our team's collective expertise and achievements</p>
 
-        <div className="excellence-grid">
-          <div className="excellence-item">
-            <div className="ex-icon">🏅</div>
-            <h4>15+</h4>
-            <span>Certifications</span>
-          </div>
+  <div className="excellence-grid">
+    
+    <div className="excellence-item">
+      <div className="ex-icon"><FaAward /></div>
+      <h4>15+</h4>
+      <span>Certifications</span>
+    </div>
 
-          <div className="excellence-item">
-            <div className="ex-icon">👥</div>
-            <h4>20+</h4>
-            <span>Team Members</span>
-          </div>
+    <div className="excellence-item">
+      <div className="ex-icon"><FaUsers /></div>
+      <h4>20+</h4>
+      <span>Team Members</span>
+    </div>
 
-          <div className="excellence-item">
-            <div className="ex-icon">⭐</div>
-            <h4>50+</h4>
-            <span>Projects Completed</span>
-          </div>
+    <div className="excellence-item">
+      <div className="ex-icon"><FaStar /></div>
+      <h4>50+</h4>
+      <span>Projects Completed</span>
+    </div>
 
-          <div className="excellence-item">
-            <div className="ex-icon">📅</div>
-            <h4>5+</h4>
-            <span>Years Experience</span>
-          </div>
-        </div>
-      </div>
+    <div className="excellence-item">
+      <div className="ex-icon"><FaCalendarAlt /></div>
+      <h4>5+</h4>
+      <span>Years Experience</span>
+    </div>
+
+  </div>
+</div>
+        
     </section>
   );
 }

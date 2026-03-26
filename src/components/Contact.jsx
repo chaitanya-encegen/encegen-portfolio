@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import "./Contact.css";
 import { FiMapPin, FiPhone, FiMail, FiClock } from "react-icons/fi";
+
 import toast from "react-hot-toast";
+import { MdSend } from "react-icons/md";
+import { BsSend } from "react-icons/bs";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -71,6 +74,7 @@ export default function Contact() {
           Ready to transform your business with AI-powered solutions?
           Let’s build something powerful together.
         </p>
+        <div className="gradient-divider" />
       </div>
 
       {/* CONTENT */}
@@ -206,9 +210,10 @@ export default function Contact() {
               />
             </div>
 
-            <button type="submit" className="send-btn">
-              ✈ Send Message
-            </button>
+    <button type="submit" className="send-btn">
+  <BsSend style={{ marginRight: "6px" }} />
+  Send Message
+</button>
           </form>
         </div>
       </div>

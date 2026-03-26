@@ -51,7 +51,7 @@ export default function ServicesSection() {
         <h2>Our <span>Services</span></h2>
         <p>We offer comprehensive technology solutions designed to transform your business and drive innovation across all aspects of your digital journey.</p>
       </div>
-
+<div className="gradient-divider" />
       <div className="services-grid">
         {services.map((s, i) => (
           <div className="service-card" key={i}>
@@ -100,6 +100,7 @@ export default function ServicesSection() {
       <div className="why-works-section">
           <h3>Why Our Approach Works</h3>
           <p>Our methodology is designed to minimize risks, maximize value, and ensure sustainable success</p>
+         
           <div className="benefits-row">
               <div className="benefit-item"><span className="dot">•</span> <div><h4>Reduced Risk</h4><p>Thorough planning and validation</p></div></div>
               <div className="benefit-item"><span className="dot">•</span> <div><h4>Faster Delivery</h4><p>Agile methodologies for efficiency</p></div></div>

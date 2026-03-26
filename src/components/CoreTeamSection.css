@@ -8,7 +8,7 @@
 /* TITLE */
 .core-title {
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 38px;
   margin-bottom: 40px;
 }
 
@@ -115,60 +115,89 @@
 
 /* EXCELLENCE */
 .excellence-box {
-  max-width: 1200px;
-  margin: 80px auto 0;
-  padding: 40px;
+  max-width: 1100px;
+  margin: 60px auto 0;
+  padding: 30px 25px;
   border-radius: 26px;
   background: rgba(15, 23, 42, 0.75);
   border: 1px solid rgba(148, 163, 184, 0.15);
   text-align: center;
 }
 
+/* Heading */
 .excellence-box h3 {
-  font-size: 1.5rem;
+  font-size: 24px;
+  margin-bottom: 8px;
+  font-weight: 600;
 }
 
 .excellence-box p {
-  margin: 10px 0 30px;
+  font-size: 14px;
+  margin-bottom: 30px;
   color: #b8b8c5;
 }
 
-/* EXCELLENCE GRID */
+/* GRID (FIXED LIKE DESIGN) */
 .excellence-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  gap: 10px;
 }
 
-.excellence-item h4 {
-  font-size: 1.8rem;
-  margin: 6px 0 2px ;
-  color: #3b82f6;
+/* ITEM */
+.excellence-item {
+  text-align: center;
 }
 
-.excellence-item span {
-  font-size: 0.9rem;
-  color: #c7c7d6;
-  display: block;
-  margin: 0;
-}
-.core-socials span {
-  cursor: pointer;
-}
-
-.active-name {
-  color: #3b82f6;
-  transition: 0.3s ease;
-}
-s
+/* ICON */
 .ex-icon {
-  width: 44px;
-  height: 44px;
-  margin: auto;
-  border-radius: 12px;
-  background: linear-gradient(135deg, #3b82f6, #a855f7);
+  width: 52px;
+  height: 52px;
+  margin: 0 auto 10px;
+  border-radius: 14px;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 20px;
+
+  background: linear-gradient(135deg, #4dd4ff, #8f4bff);
+  color: #fff;
+  font-size: 22px;
+
+  box-shadow: 0 6px 18px rgba(143, 75, 255, 0.4);
+  transition: 0.3s ease;
+}
+
+/* TEXT */
+.excellence-item h4 {
+  font-size: 28px;
+  margin: 6px 0 2px;
+  color: #3b82f6;
+  font-weight: 600;
+}
+
+.excellence-item span {
+  font-size: 14px;
+  color: #c7c7d6;
+}
+
+/* HOVER EFFECT */
+.excellence-item:hover .ex-icon {
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(143, 75, 255, 0.6);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .excellence-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .excellence-grid {
+    grid-template-columns: 1fr;
+  }
 }

@@ -63,14 +63,14 @@ export default function Industries() {
 
   return (
     <section className="industries-section" id="industries">
-      <h2 className="industries-title">
-        Industries We <span className="highlight-text">Transform</span>
+      <h2 className="industries-heading">
+        Industries <span className="highlight-text"> We Transform</span>
       </h2>
 
       <p className="industries-subtitle">
         Delivering cutting-edge AI solutions across diverse sectors with proven results and measurable impact.
       </p>
-
+<div className="gradient-divider" />
       <div className="industries-grid">
         {industries.map((item, index) => (
           <div className="industry-card" key={index} style={{backgroundImage: `url(${item.bg})`}}>

@@ -50,7 +50,7 @@ export default function Blog() {
           cybersecurity, and emerging technologies shaping the future of business.
         </p>
       </div>
-
+    <div className="gradient-divider" />
       <div className="blog-section">
         <h2>Latest <span>Insights</span></h2>
         <p className="blog-subtitle">

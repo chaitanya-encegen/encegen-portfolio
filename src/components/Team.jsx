@@ -15,6 +15,7 @@ export default function Team() {
           Our diverse team of experts combines deep technical knowledge with
           creative problem-solving to deliver exceptional results for our clients.
         </p>
+        <div className="gradient-divider" />
       </div>
 
       {/* LEADERSHIP */}

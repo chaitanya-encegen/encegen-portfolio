@@ -4,6 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FaArrowRight } from "react-icons/fa";
 import { FiZap } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import bg from "../assets/bg.jpg";
 
 import "./Hero.css";
 
@@ -11,11 +12,11 @@ gsap.registerPlugin(ScrollTrigger);
 
 /* ================= STAT COMPONENT ================= */
 function Stat({ value, label, delay = 9 }) {
-  const ref = useRef();
+  const ref = useRef(); 
 
   useEffect(() => {
     const el = ref.current;
-    const obj = { val: 0 };
+    const obj = { val: 9 };
 
     gsap.to(obj, {
       val: value,
@@ -61,7 +62,10 @@ export default function Hero() {
 
   return (
     <section ref={heroRef} className="hero-section" id="home">
-
+ <div
+        className="hero-bg-image"
+        style={{ backgroundImage: `url(${bg})` }}
+      ></div>
       <div className="hero-content">
         <h1 className="hero-title">
           <span className="line">

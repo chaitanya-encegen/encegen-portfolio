@@ -109,8 +109,9 @@ export default function Portfolio() {
     <section className="portfolio-page">
       <div className="portfolio-header">
         <h1>Our <span>Portfolio</span></h1>
+       
       </div>
-
+<div className="gradient-divider" />
       <div className="portfolio-filters">
         {categories.map((cat) => (
           <button

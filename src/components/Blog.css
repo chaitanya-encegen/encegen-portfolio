@@ -11,9 +11,14 @@
   max-width: 820px;
   margin: 0 auto 60px;
 }
-
+.gradient-divider {
+  height: 2px;
+  max-width: 1200px;
+  margin: 30px auto;
+  background: linear-gradient(90deg, transparent, #4f8cff, #b366ff, transparent);
+}
 .blog-hero h1 {
-  font-size: 28px;
+  font-size: 38px;
   font-weight: 700;
   letter-spacing: 0.5px;
 }

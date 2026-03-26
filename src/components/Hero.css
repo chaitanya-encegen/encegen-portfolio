@@ -21,7 +21,7 @@
 
 /* Background Image */
 .hero-bg-image {
-    display: flex;
+  display: flex;
   position: absolute;
   inset: 0;
   background-size: cover;

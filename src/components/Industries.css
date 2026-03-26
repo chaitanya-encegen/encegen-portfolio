@@ -11,14 +11,18 @@
 /* ===== Title & Subtitle ===== */
 
 .industries-title {
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 700;
   margin-bottom: 20px;
   color: #a370f7; /* Purple tint from image */
 }
-
+.industries-heading{
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #f5f5f5; /* Purple tint from image */}
 .highlight-text {
-  color: #a370f7;
+  color: #dad5e3;
 }
 
 .industries-subtitle {

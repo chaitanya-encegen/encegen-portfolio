@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
 import "./AboutSection.css";
+import { FaBullseye, FaEye, FaBalanceScale, FaUsers } from "react-icons/fa";
 
 export default function AboutSection({ showNavbar = false, previewOnly = false }) {
   const gridRef = useRef(null);
@@ -35,8 +36,8 @@ export default function AboutSection({ showNavbar = false, previewOnly = false }
 
       {/* HERO */}
       <div className="about-hero">
-        <h1>
-          About <span>Encegen AI Labs</span>
+        <h1 className="heading">
+          About <span className="subtitle">Encegen AI Labs</span>
         </h1>
         <p>{previewOnly ? previewText : "Founded with a vision to bridge the gap between cutting-edge AI technology and practical business solutions, Encegen AI Labs is your trusted partner in digital transformation and innovation."}</p>
       </div>
@@ -81,12 +82,12 @@ export default function AboutSection({ showNavbar = false, previewOnly = false }
                 className={`info-box ${visible ? "animate" : ""}`}
                 style={{ transitionDelay: `${index * 0.15}s` }}
               >
-                <div className="icon">
-                  {title === "Mission" && "🎯"}
-                  {title === "Vision" && "👁️"}
-                  {title === "Values" && "⚖️"}
-                  {title === "Team" && "🤝"}
-                </div>
+       <div className="icon">
+  {title === "Mission" && <FaBullseye />}
+  {title === "Vision" && <FaEye />}
+  {title === "Values" && <FaBalanceScale />}
+  {title === "Team" && <FaUsers />}
+</div>
                 <h4>{title}</h4>
                 <p>
                   {title === "Mission" &&
