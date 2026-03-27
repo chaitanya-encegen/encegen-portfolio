@@ -59,7 +59,7 @@ export default function Navbar() {
     "Services",
     "Industries",
     "Portfolio",
-    "Team",
+    // "Team",
     "Blog",
     "Contact",
   ];
@@ -69,12 +69,13 @@ export default function Navbar() {
       <div className="navbar-container">
 
         {/* LOGO */}
-        <Link to="/" className="logo-link">
-          <h2 className="logo">
-            Encegen <span>AI Labs</span>
-          </h2>
-        </Link>
-
+       <Link to="/" className="logo-link">
+  <img 
+    src="/logo.png" 
+    alt="Encegen AI Labs Logo" 
+    className="logo-img"
+  />
+</Link>
         {/* DESKTOP LINKS */}
         <ul className="nav-links">
           {navItems.map((item) => {

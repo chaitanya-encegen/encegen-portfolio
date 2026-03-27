@@ -20,11 +20,10 @@ export default function Home() {
 
       {/* Sections */}
       <Hero />
-      <AboutSection showNavbar={false} previewOnly={true} /> {/* Short preview */}
+     <AboutSection previewOnly={true} />
       <ServiceSection />
       <Industries />
       <Portfolio />
-      <Team />
       <Footer />
     </div>
   );

@@ -1,6 +1,6 @@
 .core-team-section {
   padding: 100px 20px;
-  background: radial-gradient(circle at top, #0f172a, #05060a 70%);
+  background: radial-gradient(circle at top, #020617, #05060a 70%);
   color: #fff;
   font-family: "Inter", "Poppins", sans-serif;
 }
@@ -9,35 +9,162 @@
 .core-title {
   text-align: center;
   font-size: 38px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
-/* GRID */
-.core-grid {
-  max-width: 1200px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 26px;
-}
+/* ========================= */
+/* 🔥 SLIDER SECTION */
+/* ========================= */
 
-/* CARD */
-.core-card {
-  background: rgba(15, 23, 42, 0.7);
-  border: 1px solid rgba(148, 163, 184, 0.15);
-  border-radius: 22px;
-  padding: 30px 20px;
-  text-align: center;
+.slider-container {
   position: relative;
-  transition: 0.35s ease;
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
 }
 
-.core-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 25px 50px rgba(59, 130, 246, 0.25);
+.slider {
+  position: relative;
+  height: 420px;
 }
 
-/* AVATAR */
+/* ========================= */
+/* 🔥 CARD BASE */
+/* ========================= */
+
+.core-card {
+  position: absolute;
+  width: 650px;
+  height: 350px;
+  margin-top: 60px;
+  border-radius: 24px;
+  padding: 2px;
+
+  /* gradient border */
+  background: linear-gradient(135deg, #22d3ee, #a855f7);
+
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+/* INNER GLASS */
+.core-card .card-inner {
+  display: flex;
+  gap: 24px;
+  height: 100%;
+  padding: 24px;
+  border-radius: 22px;
+
+  background: rgba(5, 10, 25, 0.95);
+  backdrop-filter: blur(16px);
+}
+
+/* ========================= */
+/* 🖼 IMAGE */
+/* ========================= */
+
+.card-image img {
+  width: 160px;
+  height: 160px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+/* ========================= */
+/* 📄 CONTENT */
+/* ========================= */
+
+.card-content {
+  flex: 1;
+}
+
+.card-content h4 {
+  font-size: 1.5rem;
+  text-align: left;
+  font-weight: 600;
+  margin-top: 0px;
+}
+
+.card-content .role {
+  display: block;
+  text-align: left;
+  margin: 6px 0 10px;
+  color: #a855f7;
+  font-size: 0.9rem;
+}
+
+.card-content p {
+  font-size: 0.85rem;
+  text-align: left;
+  line-height: 1.6;
+  color: #cbd5f5;
+  word-break: break-all;
+}
+
+/* ========================= */
+/* 🎯 SLIDER POSITIONS */
+/* ========================= */
+
+/* CENTER */
+.core-card.active {
+  left: 50%;
+  transform: translateX(-50%) scale(1.05);
+  z-index: 3;
+
+  box-shadow: 0 0 60px rgba(34, 211, 238, 0.6);
+}
+
+/* LEFT */
+.core-card.left {
+  left: -50px;
+  transform: scale(0.85);
+  opacity: 0.4;
+  z-index: 2;
+}
+
+/* RIGHT */
+.core-card.right {
+  right: -50px;
+  transform: scale(0.85);
+  opacity: 0.4;
+  z-index: 2;
+}
+
+/* HIDDEN */
+.core-card.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* ========================= */
+/* 🔘 DOTS */
+/* ========================= */
+
+.dots {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.dots span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 6px;
+  border-radius: 50%;
+  background: #444;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dots .active-dot {
+  background: #22d3ee;
+  transform: scale(1.2);
+}
+
+/* ========================= */
+/* ✨ OPTIONAL SMALL CARDS (if reused) */
+/* ========================= */
+
 .avatar {
   width: 70px;
   height: 70px;
@@ -50,7 +177,6 @@
   font-size: 30px;
 }
 
-/* BADGE */
 .badge {
   position: absolute;
   top: 18px;
@@ -65,58 +191,13 @@
   font-size: 14px;
 }
 
-/* TEXT */
-.core-card h4 {
-  font-size: 1.1rem;
-}
+/* ========================= */
+/* 🏆 EXCELLENCE SECTION */
+/* ========================= */
 
-.role {
-  font-size: 0.85rem;
-  margin: 4px 0 14px;
-  color: #a855f7;
-}
-
-/* LIST */
-.core-card ul {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 16px;
-}
-
-.core-card li {
-  font-size: 0.85rem;
-  color: #c7c7d6;
-  margin-bottom: 6px;
-}
-
-/* SOCIALS */
-.core-socials {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-.core-socials span {
-  width: 30px;
-  height: 30px;
-  border-radius: 8px;
-  border: 1px solid rgba(148, 163, 184, 0.3);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.core-socials span:hover {
-  background: linear-gradient(135deg, #3b82f6, #a855f7);
-  border-color: transparent;
-}
-
-/* EXCELLENCE */
 .excellence-box {
   max-width: 1100px;
-  margin: 60px auto 0;
+  margin: 80px auto 0;
   padding: 30px 25px;
   border-radius: 26px;
   background: rgba(15, 23, 42, 0.75);
@@ -124,7 +205,6 @@
   text-align: center;
 }
 
-/* Heading */
 .excellence-box h3 {
   font-size: 24px;
   margin-bottom: 8px;
@@ -137,7 +217,6 @@
   color: #b8b8c5;
 }
 
-/* GRID (FIXED LIKE DESIGN) */
 .excellence-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -145,12 +224,10 @@
   gap: 10px;
 }
 
-/* ITEM */
 .excellence-item {
   text-align: center;
 }
 
-/* ICON */
 .ex-icon {
   width: 52px;
   height: 52px;
@@ -169,7 +246,6 @@
   transition: 0.3s ease;
 }
 
-/* TEXT */
 .excellence-item h4 {
   font-size: 28px;
   margin: 6px 0 2px;
@@ -182,14 +258,37 @@
   color: #c7c7d6;
 }
 
-/* HOVER EFFECT */
 .excellence-item:hover .ex-icon {
   transform: scale(1.1);
   box-shadow: 0 8px 25px rgba(143, 75, 255, 0.6);
 }
 
-/* RESPONSIVE */
+/* ========================= */
+/* 📱 RESPONSIVE */
+/* ========================= */
+
 @media (max-width: 900px) {
+  .core-card {
+    width: 90%;
+    height: auto;
+  }
+
+  .card-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .card-image img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .core-card.left,
+  .core-card.right {
+    display: none;
+  }
+
   .excellence-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
