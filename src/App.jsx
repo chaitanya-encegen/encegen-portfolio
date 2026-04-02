@@ -11,7 +11,7 @@ import BlogPage from "./pages/BlogPage";
 import ContactPage from "./pages/ContactPage";
 import { initLocomotive } from "./animations/locomotive";
 import { initScrollAnimations } from "./animations/scrollAnimations";
-import ContactForm from "./components/ContactForm";
+import ContactForm from "./components/Contactform";
 
 import "./styles/animations.css";
 import "./styles/globals.css";
