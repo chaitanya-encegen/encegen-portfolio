@@ -26,7 +26,16 @@
 
   color: #000;
 }
+/* Default (Dark Theme Logo) */
+.logo-img {
+  content: url('/logo.png');
+  height: 40px;
+}
 
+/* Light Theme Logo */
+[data-theme="light"] .logo-img {
+  content: url('/logo-light.png');
+}
 .navbar-container {
   width: 100%;
   max-width: 1200px;

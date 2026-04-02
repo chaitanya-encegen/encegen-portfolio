@@ -3,13 +3,15 @@ import { Link, useLocation } from "react-router-dom";
 import { FaMoon, FaSun, FaDesktop, FaBars, FaTimes } from "react-icons/fa";
 import { motion } from "framer-motion";
 import "./Navbar.css";
+import ContactModal from "./ContactModal";
+
 
 export default function Navbar() {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "system");
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [active, setActive] = useState("home");
   const [menuOpen, setMenuOpen] = useState(false); // ✅ NEW
-
+const [modalOpen, setModalOpen] = useState(false);
   const location = useLocation();
 
   /* ================= THEME ================= */
@@ -60,7 +62,7 @@ export default function Navbar() {
     "Industries",
     "Portfolio",
     // "Team",
-    "Blog",
+    // "Blog",
     "Contact",
   ];
 
@@ -123,9 +125,13 @@ export default function Navbar() {
           </div>
 
           {/* BUTTON */}
-          <motion.button whileHover={{ scale: 1.05 }} className="get-in-touch">
-            Get in Touch
-          </motion.button>
+         <motion.button
+  whileHover={{ scale: 1.05 }}
+  className="get-in-touch"
+  onClick={() => setModalOpen(true)}
+>
+  Get in Touch
+</motion.button>
 
           {/* HAMBURGER */}
           <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
@@ -133,7 +139,10 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-
+<ContactModal
+  isOpen={modalOpen}
+  onClose={() => setModalOpen(false)}
+/>
       {/* MOBILE MENU */}
       <div className={`mobile-menu ${menuOpen ? "active" : ""}`}>
         {navItems.map((item) => {

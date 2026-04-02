@@ -17,7 +17,7 @@ export default function Industries() {
     desc: "AI-powered financial solutions, payment gateways, fraud detection, and blockchain integration for modern banking.",
     stat: "99.9%",
     statText: "Transaction Accuracy",
-    bg: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?q=80&w=1200&auto=format&fit=crop"
+    bg: "/image/FinTech.jpg",
   },
   {
     icon: <FiHeart />,
@@ -25,7 +25,7 @@ export default function Industries() {
     desc: "Digital health platforms, telemedicine applications, AI diagnostics, and patient management systems for healthcare innovation.",
     stat: "2M+",
     statText: "Patient Records Managed",
-    bg: "https://images.unsplash.com/photo-1588776814546-ec7e4b6c4a0e?q=80&w=1200&auto=format&fit=crop"
+    bg: "/image/HealthTech.png",
   },
   {
     icon: <FiHome />,
@@ -33,7 +33,7 @@ export default function Industries() {
     desc: "Smart property management, virtual tours, CRM systems, and AI-driven market analytics for real estate professionals.",
     stat: "50K+",
     statText: "Properties Listed",
-    bg: "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?q=80&w=1200&auto=format&fit=crop"
+    bg: "/image/real.jpg",
   },
   {
     icon: <FiBookOpen />,
@@ -41,7 +41,7 @@ export default function Industries() {
     desc: "E-learning platforms, LMS solutions, AI tutoring, and digital transformation for educational institutions.",
     stat: "100K+",
     statText: "Students Empowered",
-    bg: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1200&auto=format&fit=crop"
+    bg: "/image/educate.jpg",
   },
   {
     icon: <FiLayers />,
@@ -49,7 +49,7 @@ export default function Industries() {
     desc: "IoT integration, predictive maintenance, supply chain optimization, and smart factory solutions.",
     stat: "40%",
     statText: "Efficiency Increase",
-    bg: "https://images.unsplash.com/photo-1581090700227-1e8e7d2b5a1e?q=80&w=1200&auto=format&fit=crop"
+    bg: "/image/manufactor.jpg",
   },
   {
     icon: <FiShoppingBag />,
@@ -57,7 +57,7 @@ export default function Industries() {
     desc: "AI-powered recommendations, inventory management, omnichannel platforms, and customer analytics.",
     stat: "3x",
     statText: "Sales Growth",
-    bg: "https://images.unsplash.com/photo-1607082349566-187342175e2f?q=80&w=1200&auto=format&fit=crop"
+    bg: "/image/retail.png",
   }
 ];
 

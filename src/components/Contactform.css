@@ -1,0 +1,43 @@
+.modal-contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-contact-form input,
+.modal-contact-form select,
+.modal-contact-form textarea {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  outline: none;
+}
+
+.modal-contact-form input:focus,
+.modal-contact-form select:focus,
+.modal-contact-form textarea:focus {
+  border-color: #a855f7;
+  box-shadow: 0 0 0 2px rgba(168,85,247,0.25);
+}
+
+/* BUTTON */
+.modal-contact-form button {
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+
+  background: linear-gradient(90deg, #7c3aed, #d946ef);
+  color: white;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.modal-contact-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(168,85,247,0.35);
+}

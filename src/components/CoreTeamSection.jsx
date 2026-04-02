@@ -16,12 +16,7 @@ export default function CoreTeamSection() {
   const [activeIndex, setActiveIndex] = useState(null);
 
  const team = [
-  {
-    name: "Swamini Hirolikar",
-    role: "HR Executive",
-    image: hrImg,
-    desc: "The HR Executive at Encegen AI Labs plays a pivotal role in building and strengthening a high-performance team across diverse domains. With a keen eye for talent and deep understanding of recruitment, she ensures seamless hiring and onboarding while maintaining strong emphasis on culture and growth.",
-  },
+ 
   {
     name: "Chaitanya Pimpare",
     role: "Frontend Developer",
@@ -34,18 +29,19 @@ export default function CoreTeamSection() {
     image: designerImg,
     desc: "Kartik Ghodake is a passionate and professional UI Designer dedicated to creating clean, modern, and user-friendly digital experiences. With a strong focus on visual aesthetics and usability, he designs interfaces that not only look attractive but also provide seamless interaction for users. His approach combines creativity with strategy, ensuring every design solves real user problems while maintaining a strong brand identity.Kartik believes that great design is not just about visuals, but about delivering meaningful and engaging experiences.",
   },
+   {
+    name: "Nayana Ahirrao",
+    role: "Quality Assurance",
+    image: qa2Img,
+    desc: "Nayana Ahirrao serves as a Quality Assurance specialist at Encegen AI Labs, contributing to the delivery of robust and dependable technology solutions. With experience in testing AI voice agents, websites, customized software, and chatbot platforms, she ensures that every product performs seamlessly across real-world scenarios. She is known for her analytical approach and strong attention to detail, enabling her to detect inconsistencies, enhance system stability, and improve overall product quality.",
+  },
   {
     name: "Rutuja Jadhav",
     role: "Quality Assurance",
     image: qa1Img,
     desc: "Rutuja Jadhav is a Quality Assurance professional at Encegen AI Labs, specializing in ensuring the reliability and performance of advanced digital solutions. With hands-on experience in testing AI voice agents, websites, customized software, and chatbot systems, she plays a key role in delivering seamless and high-quality user experiences. Her expertise lies in identifying critical issues, validating system functionality, and maintaining performance standards across diverse projects. Rutuja follows a structured and detail-oriented testing approach, ensuring that every solution meets both technical requirements and user expectations.",
   },
-  {
-    name: "Nayana Ahirrao",
-    role: "Quality Assurance",
-    image: qa2Img,
-    desc: "Nayana Ahirrao serves as a Quality Assurance specialist at Encegen AI Labs, contributing to the delivery of robust and dependable technology solutions. With experience in testing AI voice agents, websites, customized software, and chatbot platforms, she ensures that every product performs seamlessly across real-world scenarios. She is known for her analytical approach and strong attention to detail, enabling her to detect inconsistencies, enhance system stability, and improve overall product quality.",
-  },
+ 
   {
     name: "Poonam Harinkhede",
     role: "AI / ML Developer",
@@ -58,7 +54,14 @@ export default function CoreTeamSection() {
     image: dev1Img,
     desc: "Shruti Jadhav is a talented Web Developer specializing in frontend technologies with a passion for creating responsive, user-centric websites and applications. His expertise includes React, JavaScript, and Tailwind CSS.With a focus on clean, maintainable code and seamless UX, he contributes significantly to building feature-rich digital products.Shruti Jadhav is committed to staying updated with the latest web development trends and best practices to deliver modern and efficient solutions.",
   },
-  {
+
+   {
+    name: "Swamini Hirolikar",
+    role: "HR Executive",
+    image: hrImg,
+    desc: "The HR Executive at Encegen AI Labs plays a pivotal role in building and strengthening a high-performance team across diverse domains. With a keen eye for talent and deep understanding of recruitment, she ensures seamless hiring and onboarding while maintaining strong emphasis on culture and growth.",
+  },
+    {
     name: "Vishit Jiwane",
     role: "AI/ML Developer",
     image: aimlImg,

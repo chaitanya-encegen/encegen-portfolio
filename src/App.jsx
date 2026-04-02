@@ -11,10 +11,14 @@ import BlogPage from "./pages/BlogPage";
 import ContactPage from "./pages/ContactPage";
 import { initLocomotive } from "./animations/locomotive";
 import { initScrollAnimations } from "./animations/scrollAnimations";
+import ContactForm from "./components/ContactForm";
+
 import "./styles/animations.css";
 import "./styles/globals.css";
 import ScrollToTop from "./components/ScrollToTop";
 import {Toaster} from "react-hot-toast";
+
+
 export default function App() {
 useEffect(() => {
   const loco = initLocomotive();
@@ -44,6 +48,8 @@ useEffect(() => {
         <Route path="/team" element={<TeamPage />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/contactform" element={<ContactForm />} />
+       
       </Routes>
       </div>
     </Router>
