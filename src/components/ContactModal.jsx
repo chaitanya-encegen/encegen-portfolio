@@ -1,7 +1,7 @@
 import React from "react";
 import { createPortal } from "react-dom";
 import { FaTimes } from "react-icons/fa";
-import ContactForm from "./ContactForm";
+import ContactForm from "./Contactform";
 import "./ContactModal.css";
 
 export default function ContactModal({ isOpen, onClose }) {
