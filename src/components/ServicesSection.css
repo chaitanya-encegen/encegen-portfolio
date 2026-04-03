@@ -266,9 +266,13 @@ html, body {
 .view-all-btn {
   background: linear-gradient(90deg, #3b82f6, #9333ea);
   border: none; color: white; padding: 12px 30px;
+  font-size: small;
   border-radius: 10px; font-weight: 600; cursor: pointer;
 }
-
+.view-all-btn :hover{
+   background: #3b82f6;
+  border-color: #3b82f6;
+}
 /* APPROACH SECTION */
 /* ================= APPROACH SECTION ================= */
 

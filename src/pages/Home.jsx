@@ -8,6 +8,7 @@ import Team from "../components/Team";
 import Footer from "../components/Footer";
 import ThreeBackground from "../components/ThreeBackground";
 import bg from "../assets/bg.jpg";
+import Contact from "../components/Contact";
 
 export default function Home() {
   return (
@@ -24,7 +25,9 @@ export default function Home() {
       <ServiceSection />
       <Industries />
       <Portfolio />
+        <Contact />
       <Footer />
+
     </div>
   );
 }

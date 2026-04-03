@@ -1,5 +1,6 @@
 import React from "react";
 import "./ServicesSection.css";
+import { Link } from "react-router-dom";
 import { 
   LuBrain, LuCode, LuGlobe, LuTrendingUp, 
   LuDatabase, LuShoppingCart, LuCpu, 
@@ -81,7 +82,8 @@ export default function ServicesSection() {
           ))}
         </div>
         <div className="center-btn">
-            <button className="view-all-btn">View All Services →</button>
+            <Link to="/services" className="view-all-btn"> View All Services →</Link>
+             
         </div>
       </div>
 

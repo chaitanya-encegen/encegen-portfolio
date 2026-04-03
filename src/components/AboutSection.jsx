@@ -108,7 +108,7 @@ export default function AboutSection({ showNavbar = false, previewOnly = false }
       {/* CTA for preview only */}
       {previewOnly && (
         <div className="about-cta">
-          <Link to="/about" className="learn-more-btn">
+          <Link to="/about" className="learn-btn">
             Learn More About Us →
           </Link>
         </div>

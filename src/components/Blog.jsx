@@ -9,71 +9,76 @@ export default function Blog() {
       category: "Web Development",
       date: "Jan 10, 2024",
       read: "6 min read",
-      desc: "Learn how modern e-commerce platforms scale efficiently using cloud-native architecture and performance optimization strategies."
+      desc: "Learn how modern e-commerce platforms scale efficiently using cloud-native architecture.",
+      img: "https://images.unsplash.com/photo-1557821552-17105176677c"
     },
     {
       title: "Digital Transformation in Healthcare",
       category: "Healthcare Tech",
       date: "Jan 8, 2024",
       read: "7 min read",
-      desc: "Discover how AI, IoT, and data analytics are revolutionizing patient care and operational efficiency in healthcare."
+      desc: "Discover how AI and IoT are revolutionizing healthcare systems.",
+      img: "https://images.unsplash.com/photo-1581091012184-5c5e8e5d5d7c"
     },
     {
       title: "Cybersecurity Best Practices",
       category: "Cybersecurity",
       date: "Jan 5, 2024",
       read: "5 min read",
-      desc: "Essential security frameworks and compliance strategies to protect your business from evolving cyber threats."
+      desc: "Protect your business with modern cybersecurity frameworks.",
+      img: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b"
     },
     {
       title: "The Role of No-Code/Low-Code Platforms",
       category: "Software Development",
-      date: "Jan 3, 2024",
+      date: "Jan 3, 2024",     
       read: "6 min read",
-      desc: "How no-code tools are accelerating product development and reducing time-to-market for startups."
-    },
-    {
-      title: "Data Analytics: Turning Information into Insights",
-      category: "Data Science",
-      date: "Dec 28, 2023",
-      read: "8 min read",
-      desc: "Transform raw business data into strategic decisions using advanced analytics and visualization tools."
+      desc: "How no-code tools are accelerating product development.",
+      img: "https://images.unsplash.com/photo-1518770660439-4636190af475"
     }
   ];
 
   return (
     <section className="blog-page">
+      
+      {/* HERO */}
       <div className="blog-hero">
         <h1>Blog & Insights</h1>
         <p>
           Explore expert perspectives on AI, digital transformation, cloud computing,
-          cybersecurity, and emerging technologies shaping the future of business.
+          cybersecurity, and emerging technologies.
         </p>
       </div>
-    <div className="gradient-divider" />
+
+      <div className="gradient-divider" />
+
+      {/* FEATURED */}
       <div className="blog-section">
         <h2>Latest <span>Insights</span></h2>
-        <p className="blog-subtitle">
-          Thought leadership, industry trends, and actionable technology strategies.
-        </p>
 
         <div className="featured-blog">
+          
+          {/* IMAGE */}
           <div className="featured-image">
-            <span className="badge">Featured Article</span>
+            <img
+              src="https://images.unsplash.com/photo-1677442136019-21780ecad995"
+              alt="AI Blog"
+            />
+            <span className="badge">Featured</span>
           </div>
 
+          {/* CONTENT */}
           <div className="featured-content">
             <div className="meta">
-              <span className="tag">AI & Machine Learning</span>
-              <span><FiCalendar /> January 15, 2024</span>
+              <span className="tag">AI & ML</span>
+              <span><FiCalendar /> Jan 15, 2024</span>
             </div>
 
             <h3>The Future of AI in Business Automation</h3>
 
             <p>
-              Artificial intelligence is redefining how businesses operate.
-              From workflow automation to predictive analytics, discover how AI
-              is driving efficiency and innovation.
+              AI is transforming business operations with automation,
+              predictive analytics, and intelligent workflows.
             </p>
 
             <div className="author">
@@ -86,10 +91,17 @@ export default function Blog() {
         </div>
       </div>
 
+      {/* BLOG GRID */}
       <div className="blog-grid">
         {blogs.map((b, i) => (
           <div className="blog-card" key={i}>
-            <div className="blog-card-image" />
+            
+            {/* IMAGE */}
+            <div className="blog-card-image">
+              <img src={b.img} alt={b.title} />
+            </div>
+
+            {/* CONTENT */}
             <div className="blog-card-content">
               <div>
                 <span className="tag">{b.category}</span>
@@ -97,37 +109,31 @@ export default function Blog() {
                 <p className="card-desc">{b.desc}</p>
               </div>
 
-  <div>
-    <div className="meta small">
-      <span>{b.date}</span>
-      <span>{b.read}</span>
-    </div>
-    <button className="read-article">Read Article →</button>
-  </div>
-</div>
-
+              <div>
+                <div className="meta small">
+                  <span>{b.date}</span>
+                  <span>{b.read}</span>
+                </div>
+                <button className="read-article">Read →</button>
+              </div>
+            </div>
           </div>
         ))}
       </div>
 
+      {/* NEWSLETTER */}
       <div className="newsletter">
-        <h3>Stay Updated with Our Latest Insights</h3>
-        <p>
-          Subscribe to receive expert articles, industry updates, and innovation
-          insights directly in your inbox.
-        </p>
+        <h3>Stay Updated</h3>
+        <p>Subscribe for latest insights and updates.</p>
 
         <div className="newsletter-form">
-          <input type="email" placeholder="Enter your email address" />
+          <input type="email" placeholder="Enter your email" />
           <button>Subscribe</button>
         </div>
 
-        <p className="privacy-text">
-          No spam. Unsubscribe at any time. We respect your privacy.
-        </p>
-
-        <button className="view-all">View All Articles →</button>
+        <button className="view-all">View All →</button>
       </div>
+
     </section>
   );
 }

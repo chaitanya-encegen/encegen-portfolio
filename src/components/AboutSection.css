@@ -177,26 +177,42 @@
 }
 
 .cta button,
-.learn-more-btn {
+/* .learn-more-btn {
   display: inline-block;
+  width: 50%;
   padding: 14px 40px;
   border-radius: 50px;
-  background: linear-gradient(135deg, #4f8cff, #b366ff);
-  color: #ffffff;
-  font-weight: 600; /* hero font weight */
-  font-size: 1rem;
-  text-decoration: none;
+ 
+  
+
   cursor: pointer;
   transition: transform 0.3s, box-shadow 0.3s;
   box-shadow: 0 10px 25px rgba(79, 140, 255, 0.3);
-}
+} */
 
-.cta button:hover,
+/* .cta button:hover,
 .learn-more-btn:hover {
   transform: translateY(-4px);
   box-shadow: 0 15px 35px rgba(179, 102, 255, 0.4);
+} */
+.learn-btn {
+    background: linear-gradient(135deg, #4f8cff, #b366ff);
+    border: 1px solid #436ca5;
+    justify-content: center;
+    color: #ffffff;
+    padding:15px;
+    border-radius: 8px;
+    font-size:small;
+    font-weight: 600;
+    cursor: pointer;
+    /* margin-left: 36%; */
+    transition: all 0.3s ease;
 }
 
+.learn-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(179, 102, 255, 0.4);
+}
 /* ================= CORE TEAM ================= */
 .core-team-name {
   user-select: none;
