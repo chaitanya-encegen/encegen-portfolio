@@ -21,7 +21,7 @@ export default function Home() {
 
       {/* Sections */}
       <Hero />
-     <AboutSection previewOnly={true} />
+      <AboutSection showNavbar={true} previewOnly={true} /> {/* Full content with navbar */}
       <ServiceSection />
       <Industries />
       <Portfolio />

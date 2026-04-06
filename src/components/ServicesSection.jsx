@@ -70,23 +70,39 @@ export default function ServicesSection() {
       </div>
 
       <div className="expertise-section">
-        <h3 className="expertise-main-title">Additional Expertise</h3>
-        <p className="expertise-subtitle">We also provide specialized consulting and support services</p>
-        <div className="expertise-grid">
-          {expertises.map((e, i) => (
-            <div className="expertise-item" key={i}>
-              <div className="exp-icon-box">{e.icon}</div>
-              <h4>{e.title}</h4>
-              <span>{e.desc}</span>
-            </div>
-          ))}
-        </div>
-        <div className="center-btn">
-            <Link to="/services" className="view-all-btn"> View All Services →</Link>
-             
-        </div>
-      </div>
 
+  {/* ✅ CARD CONTAINER ADDED */}
+  <div className="expertise-card">
+    <h3 className="expertise-main-title">Additional Expertise</h3>
+
+    <p className="expertise-subtitle">
+      We also provide specialized consulting and support services
+    </p>
+
+    <div className="expertise-grid">
+      {expertises.map((e, i) => (
+        <div className="expertise-item" key={i}>
+          
+          {/* ✅ ICON FIXED */}
+          <div className="exp-icon-box">
+            {e.icon}
+          </div>
+
+          <h4 className="expertise-title">{e.title}</h4>
+          <p className="expertise-desc">{e.desc}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  {/* ✅ BUTTON OUTSIDE CARD (IMPORTANT) */}
+  <div className="center-btn">
+    <Link to="/services" className="view-all-btn">
+      View All Services →
+    </Link>
+  </div>
+
+</div>
       <div className="section-header-centered" style={{marginTop: '100px'}}>
           <h2>Our <span>Approach</span></h2>
           <p>We follow a proven 4-step methodology that ensures successful project delivery and long-term client satisfaction.</p>

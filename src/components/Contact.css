@@ -1,5 +1,5 @@
 .contact-page {
-  background: #06070f;
+  background: transparent; /* ✅ use global bg */
   color: #fff;
   padding: 90px 60px;
   font-family: "Poppins", sans-serif;
@@ -33,18 +33,20 @@
 /* CONTENT */
 .contact-content {
   display: grid;
-  grid-template-columns: 1fr 1.4fr;
-  gap: 40px;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 60px; /* 🔥 better spacing */
 }
 
-/* INFO */
+/* INFO CARD */
 .contact-info {
-  background: linear-gradient(145deg, rgba(20, 30, 50, 0.7), rgba(10, 15, 30, 0.9));
-  border-radius: 24px;
+  background: linear-gradient(145deg, rgba(25, 35, 60, 0.6), rgba(10, 15, 30, 0.9));
+  border-radius: 20px;
   padding: 35px;
-  border: 1px solid rgba(100, 200, 255, 0.2);
-  backdrop-filter: blur(14px);
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  backdrop-filter: blur(16px);
+
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
 }
 
 .contact-info h3 {
@@ -52,26 +54,50 @@
   font-size: 22px;
 }
 
+/* INFO ITEMS */
 .info-item {
   display: flex;
   gap: 14px;
-  margin-bottom: 18px; 
+  margin-bottom: 20px;
+  align-items: flex-start;
+  transition: 0.3s;
 }
 
+.info-item:hover {
+  transform: translateX(5px);
+}
+
+/* ICON BOX 🔥 */
+.info-item svg {
+  width: 42px;
+  height: 42px;
+  padding: 10px;
+
+  border-radius: 12px;
+
+  background: linear-gradient(135deg, #4f46e5, #9333ea);
+  color: white;
+
+  flex-shrink: 0;
+}
+
+/* FORM */
 .contact-form h3 {
-  font-size: 22px;
+  font-size: 26px;
+  font-weight: 700;
 }
 
 .contact-form p {
-  margin-top: 6px;
-  opacity: 0.8;
-  font-size: 13px;
+  margin-top: 8px;
+  opacity: 0.7;
+  font-size: 14px;
 }
 
+/* GRID */
 .form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 16px;
+  gap: 18px;
   margin-top: 18px;
 }
 
@@ -83,67 +109,77 @@ label {
   font-size: 12px;
   opacity: 0.8;
 }
-/* Fix Select Dropdown Text Visibility */
 
-select {
-  width: 100%;
+/* INPUTS 🔥 */
+input,
+select,
+textarea {
+  width: 100%; /* ✅ FIXED */
   margin-top: 6px;
-  padding: 12px 14px;
+  padding: 14px 16px;
+
   border-radius: 14px;
   border: 1px solid rgba(255, 255, 255, 0.15);
+
   background: rgba(255, 255, 255, 0.03);
   color: #fff;
+
   font-size: 14px;
+  transition: 0.3s;
+}
+
+/* SELECT FIX */
+select {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  transition: 0.3s ease;
 }
-
 
 select option {
   background-color: #0f111a;
   color: #fff;
 }
 
-/* Focus State */
-select:focus,
+/* FOCUS EFFECT */
 input:focus,
+select:focus,
 textarea:focus {
   outline: none;
   border: 1px solid #8f4bff;
-  box-shadow: 0 0 8px rgba(143, 75, 255, 0.5);
+  box-shadow: 0 0 10px rgba(143, 75, 255, 0.6);
 }
 
-input,
-
+/* TEXTAREA */
 textarea {
-  width: 90%;
-  margin-top: 6px;
-  padding: 12px 14px;
-  border-radius: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  background: transparent;
-  color: #fff;
-}
-
-textarea {
-  min-height: 120px;
+  min-height: 130px;
   resize: none;
 }
 
+/* BUTTON 🔥 */
 .send-btn {
-  margin-top: 24px;
+  margin-top: 28px;
   width: 100%;
-  padding: 14px;
-  border-radius: 22px;
+  padding: 16px;
+
+  border-radius: 30px;
   border: none;
-  cursor: pointer;
-  background: linear-gradient(90deg, #4dd4ff, #8f4bff);
+
+  background: linear-gradient(90deg, #4f46e5, #9333ea);
   color: #fff;
+
   font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 0.3s;
 }
 
+.send-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(147, 51, 234, 0.5);
+}
+
+/* PRIVACY */
 .privacy {
   margin-top: 12px;
   font-size: 11px;
@@ -178,5 +214,6 @@ textarea {
 @media (max-width: 900px) {
   .contact-content {
     grid-template-columns: 1fr;
+    gap: 40px;
   }
 }

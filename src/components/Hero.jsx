@@ -62,10 +62,10 @@ export default function Hero() {
 
   return (
     <section ref={heroRef} className="hero-section" id="home">
- <div
+ {/* <div
         className="hero-bg-image"
         style={{ backgroundImage: `url(${bg})` }}
-      ></div>
+      ></div> */}
       <div className="hero-content">
         <h1 className="hero-title">
           <span className="line">
