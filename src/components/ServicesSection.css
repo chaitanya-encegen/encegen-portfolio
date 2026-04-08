@@ -551,3 +551,116 @@ html, body {
         grid-template-columns: 1fr;
     }
 }
+/* ================= LIGHT THEME ================= */
+
+[data-theme="light"] .services-container {
+  background: linear-gradient(to bottom, #ffffff, #f1f5f9);
+  color: #111827;
+}
+
+/* HEADER */
+[data-theme="light"] .section-header-centered h2 {
+  color: #111827;
+}
+
+[data-theme="light"] .section-header-centered p {
+  color: #6b7280;
+}
+
+/* SERVICE CARD */
+[data-theme="light"] .service-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* TOP GRADIENT LINE */
+[data-theme="light"] .service-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+  background: linear-gradient(90deg, #4f46e5, #9333ea);
+}
+
+/* HOVER */
+[data-theme="light"] .service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+/* TEXT */
+[data-theme="light"] .card-title {
+  color: #111827;
+}
+
+[data-theme="light"] .service-card p {
+  color: #6b7280;
+}
+
+[data-theme="light"] .points-grid li {
+  color: #374151;
+}
+
+[data-theme="light"] .points-grid li::before {
+  color: #8b5cf6;
+}
+
+/* BUTTON */
+[data-theme="light"] .learn-more-btn {
+  background: #f9fafb;
+  border: 1px solid #d1d5db;
+  color: #111827;
+}
+
+[data-theme="light"] .learn-more-btn:hover {
+  background: linear-gradient(90deg, #4f46e5, #9333ea);
+  color: #fff;
+  border-color: transparent;
+}
+
+/* EXPERTISE */
+[data-theme="light"] .expertise-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+[data-theme="light"] .expertise-title {
+  color: #111827;
+}
+
+[data-theme="light"] .expertise-desc {
+  color: #6b7280;
+}
+
+/* APPROACH */
+[data-theme="light"] .approach-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+}
+
+[data-theme="light"] .approach-title {
+  color: #111827;
+}
+
+[data-theme="light"] .approach-desc {
+  color: #6b7280;
+}
+
+/* WHY SECTION */
+[data-theme="light"] .why-works-section {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+}
+
+[data-theme="light"] .why-works-section h3 {
+  color: #111827;
+}
+
+[data-theme="light"] .why-works-section p {
+  color: #6b7280;
+}

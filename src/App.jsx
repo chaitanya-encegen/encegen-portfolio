@@ -44,13 +44,13 @@ export default function App() {
       <div
         className="global-bg"
         style={{ backgroundImage: `url(${bg})` }}
-      />
+      ></div>
 
       <Toaster position="top-right" reverseOrder={false} />
       <ScrollToTop />
       <Navbar />
 
-      <div data-scroll-container className="app-content">
+      <div data-scroll-container>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />

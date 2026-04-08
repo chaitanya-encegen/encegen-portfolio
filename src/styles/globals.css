@@ -123,3 +123,52 @@ body {
 section {
   background: transparent !important;
 }
+/* ================= GLOBAL BACKGROUND ================= */
+
+/* DARK MODE */
+.global-bg {
+  position: fixed;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+  opacity: 1;
+  transition: 0.4s ease;
+}
+
+/* LIGHT MODE → REMOVE IMAGE */
+[data-theme="light"] .global-bg {
+  background: none !important;
+  opacity: 0;
+}
+
+/* ================= LIGHT THEME BACKGROUND ================= */
+
+[data-theme="light"] body {
+  background: linear-gradient(
+    to bottom,
+    #ffffff,
+    #f1f5f9,
+    #eef2ff
+  );
+  color: #111827;
+}
+
+/* ================= TEXT COLORS ================= */
+
+[data-theme="light"] {
+  --text-primary: #111827;
+  --text-secondary: #6b7280;
+}
+
+/* Apply globally */
+[data-theme="light"] h1,
+[data-theme="light"] h2,
+[data-theme="light"] h3 {
+  color: var(--text-primary);
+}
+
+[data-theme="light"] p,
+[data-theme="light"] span {
+  color: var(--text-secondary);
+}

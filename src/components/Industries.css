@@ -255,3 +255,108 @@
     padding: 0 10px;
   }
 }
+/* ================= LIGHT MODE (FIXED CLEAN VERSION) ================= */
+
+[data-theme="light"] .industries-section {
+  background: #ffffff;
+  color: #111827;
+}
+
+/* TITLE */
+[data-theme="light"] .industries-title,
+[data-theme="light"] .industries-heading {
+  color: #111827;
+}
+
+[data-theme="light"] .highlight-text {
+  color: #4f46e5;
+}
+
+[data-theme="light"] .industries-subtitle {
+  color: #6b7280;
+}
+
+/* CARD FIX */
+[data-theme="light"] .industry-card {
+  background: #ffffff !important;
+  border: 1px solid #e5e7eb;
+}
+
+/* ❌ REMOVE DARK OVERLAY */
+[data-theme="light"] .industry-card::before {
+  display: none !important;
+}
+
+/* ❌ REMOVE DARK EFFECTS */
+[data-theme="light"] .industry-card {
+  filter: none !important;
+  background-blend-mode: normal !important;
+}
+
+/* TEXT FIX */
+[data-theme="light"] .industry-card h3 {
+  color: #111827 !important;
+}
+
+[data-theme="light"] .industry-desc {
+  color: #6b7280 !important;
+}
+
+/* ICON */
+[data-theme="light"] .industry-icon {
+  background: #eef2ff;
+  border: 1px solid #c7d2fe;
+  color: #4f46e5;
+}
+
+/* STATS */
+[data-theme="light"] .industry-stat {
+  border-top: 1px solid #e5e7eb;
+}
+
+[data-theme="light"] .stat-text {
+  color: #6b7280;
+}
+
+/* ❌ REMOVE GLOW */
+[data-theme="light"] .industry-card:hover {
+  transform: translateY(-5px);
+  border-color: #4f46e5;
+  box-shadow: none !important;
+}
+
+/* ================= CTA LIGHT ================= */
+
+[data-theme="light"] .industries-cta {
+  background: #f9fafb;
+}
+
+[data-theme="light"] .cta-container {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+}
+
+[data-theme="light"] .cta-heading {
+  color: #111827;
+}
+
+[data-theme="light"] .cta-subtext {
+  color: #6b7280;
+}
+
+[data-theme="light"] .stat-item h3 {
+  color: #4f46e5;
+}
+
+[data-theme="light"] .stat-item p {
+  color: #6b7280;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .industries-grid {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+}

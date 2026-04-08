@@ -4,12 +4,13 @@ import { FaEnvelope, FaLinkedinIn, FaUser } from "react-icons/fa";
 import { FaAward, FaUsers, FaStar, FaCalendarAlt } from "react-icons/fa";
 import { HiBadgeCheck } from "react-icons/hi";
 import hrImg from "../assets/hr.jpg";
-import devImg from "../assets/dev.jpg";
+import devImg from "../assets/image3.jpeg";
 import designerImg from "../assets/designer.jpg";
-import qa1Img from "../assets/qa1.png";
+import qa1Img from "../assets/qa1.jpg";
 import qa2Img from "../assets/qa2.png";
-import aiml1Img from "../assets/aiml1.png";
+import aiml0Img from "../assets/aiml0.png";
 import aimlImg from "../assets/aiml.png";
+import aiml2Img from "../assets/aiml2.png";
 import dev1Img from "../assets/dev1.png";
 
 export default function CoreTeamSection() {
@@ -19,7 +20,7 @@ export default function CoreTeamSection() {
  
   {
     name: "Chaitanya Pimpare",
-    role: "Frontend Developer",
+    role: "Full Stack Developer",
     image: devImg,
     desc: "Chaitanya Pimpare is a talented Web Developer specializing in frontend technologies with a passion for creating responsive, user-centric websites and applications. His expertise includes React, JavaScript, and Tailwind CSS.With a focus on clean, maintainable code and seamless UX, he contributes significantly to building feature-rich digital products.Chaitanya is committed to staying updated with the latest web development trends and best practices to deliver modern and efficient solutions.",
   },
@@ -27,7 +28,7 @@ export default function CoreTeamSection() {
     name: "Kartik Ghodake",
     role: "UI/UX Designer",
     image: designerImg,
-    desc: "Kartik Ghodake is a passionate and professional UI Designer dedicated to creating clean, modern, and user-friendly digital experiences. With a strong focus on visual aesthetics and usability, he designs interfaces that not only look attractive but also provide seamless interaction for users. His approach combines creativity with strategy, ensuring every design solves real user problems while maintaining a strong brand identity.Kartik believes that great design is not just about visuals, but about delivering meaningful and engaging experiences.",
+    desc: "Kartik Ghodake is a passionate and professional UI Designer dedicated to creating clean, modern, and user-friendly digital experiences. With a strong focus on visual aesthetics and usability, he designs interfaces that not only look attractive but also provide seamless interaction for users. His approach combines creativity with strategy, ensuring every design solves real user problems while maintaining a strong brand identity.",
   },
    {
     name: "Nayana Ahirrao",
@@ -39,20 +40,20 @@ export default function CoreTeamSection() {
     name: "Rutuja Jadhav",
     role: "Quality Assurance",
     image: qa1Img,
-    desc: "Rutuja Jadhav is a Quality Assurance professional at Encegen AI Labs, specializing in ensuring the reliability and performance of advanced digital solutions. With hands-on experience in testing AI voice agents, websites, customized software, and chatbot systems, she plays a key role in delivering seamless and high-quality user experiences. Her expertise lies in identifying critical issues, validating system functionality, and maintaining performance standards across diverse projects. Rutuja follows a structured and detail-oriented testing approach, ensuring that every solution meets both technical requirements and user expectations.",
+    desc: "Rutuja Jadhav is a Quality Assurance professional at Encegen AI Labs, specializing in ensuring the reliability and performance of advanced digital solutions. With hands-on experience in testing AI voice agents, websites, customized software, and chatbot systems, she plays a key role in delivering seamless and high-quality user experiences. Her expertise lies in identifying critical issues, validating system functionality, and maintaining performance standards across diverse projects.",
   },
  
   {
     name: "Poonam Harinkhede",
     role: "AI / ML Developer",
-    image: aiml1Img,
+    image: aiml0Img,
     desc: "Poonam Harinkhede is an innovative AI/ML Developer with expertise in machine learning algorithms, data modeling, and AI workflow automation.She specializes in developing intelligent systems that enhance decision-making and operational efficiency.Poonam holds a strong research background and is dedicated to applying AI technologies to solve complex business challenges.",
   },
   {
     name: "Shruti Jadhav",
     role: "Full stack Developer",
     image: dev1Img,
-    desc: "Shruti Jadhav is a talented Web Developer specializing in frontend technologies with a passion for creating responsive, user-centric websites and applications. His expertise includes React, JavaScript, and Tailwind CSS.With a focus on clean, maintainable code and seamless UX, he contributes significantly to building feature-rich digital products.Shruti Jadhav is committed to staying updated with the latest web development trends and best practices to deliver modern and efficient solutions.",
+    desc: "Shruti Jadhav is a talented Web Developer specializing in frontend technologies with a passion for creating responsive, user-centric websites and applications. Her expertise includes React, JavaScript, and Tailwind CSS.With a focus on clean, maintainable code and seamless UX, she contributes significantly to building feature-rich digital products.Shruti Jadhav is committed to staying updated with the latest web development trends and best practices to deliver modern and efficient solutions.",
   },
 
    {
@@ -65,7 +66,13 @@ export default function CoreTeamSection() {
     name: "Vishit Jiwane",
     role: "AI/ML Developer",
     image: aimlImg,
-    desc: "Vishit Jiwane is an innovative AI/ML Developer with expertise in machine learning algorithms, data modeling, and AI workflow automation.She specializes in developing intelligent systems that enhance decision-making and operational efficiency.Vishit holds a strong research background and is dedicated to applying AI technologies to solve complex business challenges.",
+    desc: "Vishit Jiwane is an innovative AI/ML Developer with expertise in machine learning algorithms, data modeling, and AI workflow automation.He specializes in developing intelligent systems that enhance decision-making and operational efficiency.Vishit holds a strong research background and is dedicated to applying AI technologies to solve complex business challenges.",
+  },
+    {
+    name: "Aditya Nalla",
+    role: "AI/ML Developer",
+    image: aiml2Img,
+    desc: "Aditya Nalla is an innovative AI/ML Developer with expertise in machine learning algorithms, data modeling, and AI workflow automation.He specializes in developing intelligent systems that enhance decision-making and operational efficiency.Aditya holds a strong research background and is dedicated to applying AI technologies to solve complex business challenges.",
   },
 ];
   return (

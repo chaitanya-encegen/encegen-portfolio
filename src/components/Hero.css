@@ -16,38 +16,41 @@ html, body {
   justify-content: center;
   text-align: center;
   padding: 60px 16px;
-  overflow: hidden;
   color: #fff;
 }
 
-/* Light Mode */
-[data-theme="light"] .hero-section {
-  background: rgba(255, 255, 255, 0.226);
-  color: #000;
+/* ================= DARK MODE ================= */
+.hero-section {
+  background: transparent;
 }
 
-/* Background */
+/* ================= LIGHT MODE ================= */
+[data-theme="light"] .hero-section {
+  background: linear-gradient(to bottom, #ffffff, #f1f5f9);
+  color: #111827;
+}
 
+/* BACKGROUND IMAGE (FIXED + CLEAN) */
 .hero-bg-image {
-  position: fixed;   /* 🔥 makes it stick */
-  top: 0;
-  left: 0;
+  position: fixed;
+  inset: 0;
   width: 100%;
-  height: 120vh;
+  height: 100%;
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: -3;      /* keep behind content */
-}
-.hero-bg-image {
-  position: absolute;
-  inset: 0;
-  background-size: cover;
-  background-position: center;
+
   opacity: 0.25;
- 
+  z-index: -2;
 }
-/* Content */
+
+/* LIGHT MODE BG ADJUST */
+[data-theme="light"] .hero-bg-image {
+  opacity: 0.1;
+}
+
+/* CONTENT */
 .hero-content {
   position: relative;
   z-index: 2;
@@ -56,22 +59,19 @@ html, body {
   padding: 0 10px;
 }
 
-/* TITLE FIX */
+/* TITLE */
 .hero-title {
   font-size: clamp(2rem, 6vw, 4.5rem);
   font-weight: 600;
   line-height: 1.3;
   margin-bottom: 16px;
-  word-break: break-word;
 }
 
-/* 🔥 IMPORTANT FIX */
 .line {
   display: block;
-  white-space: normal; /* FIXED */
 }
 
-/* Gradient Text */
+/* GRADIENT TEXT */
 .highlight-text,
 .highlight-box {
   background: linear-gradient(90deg, #4f8cff, #b366ff);
@@ -79,7 +79,7 @@ html, body {
   -webkit-text-fill-color: transparent;
 }
 
-/* Subtitle */
+/* SUBTITLE */
 .hero-subtitle {
   font-size: clamp(0.95rem, 2.5vw, 1.25rem);
   color: #a0a7c2;
@@ -88,7 +88,12 @@ html, body {
   line-height: 1.6;
 }
 
-/* Buttons */
+/* LIGHT MODE TEXT FIX */
+[data-theme="light"] .hero-subtitle {
+  color: #6b7280;
+}
+
+/* BUTTONS */
 .hero-buttons {
   margin-top: 24px;
   display: flex;
@@ -97,7 +102,7 @@ html, body {
   gap: 12px;
 }
 
-/* Buttons common */
+/* COMMON BUTTON */
 .btn-gradient,
 .btn-outline {
   display: inline-flex;
@@ -110,14 +115,12 @@ html, body {
   font-weight: 600;
   font-size: 0.95rem;
   transition: all 0.3s ease;
-  cursor: pointer;
 }
 
-/* Gradient Button */
+/* GRADIENT BUTTON */
 .btn-gradient {
   background: linear-gradient(90deg, #4f8cff, #b366ff);
   color: #fff;
-  border: none;
 }
 
 .btn-gradient:hover {
@@ -125,12 +128,22 @@ html, body {
   box-shadow: 0 8px 25px rgba(123, 97, 255, 0.4);
 }
 
-/* Outline Button */
+/* OUTLINE BUTTON */
 .btn-outline {
   border: 2px solid #3f8cff;
   color: #3f8cff;
   background: transparent;
-  font-weight: 700;
+}
+
+/* LIGHT MODE BUTTON FIX */
+[data-theme="light"] .btn-outline {
+  border: 2px solid #4f46e5;
+  color: #4f46e5;
+}
+
+[data-theme="light"] .btn-outline:hover {
+  background: #4f46e5;
+  color: #fff;
 }
 
 .btn-outline:hover {
@@ -139,7 +152,7 @@ html, body {
   transform: scale(1.05);
 }
 
-/* Stats */
+/* STATS */
 .hero-stats {
   margin-top: 40px;
   display: flex;
@@ -168,6 +181,11 @@ html, body {
   color: #8c93b5;
 }
 
+/* LIGHT MODE STATS */
+[data-theme="light"] .stat-label {
+  color: #6b7280;
+}
+
 /* ================= MOBILE ================= */
 @media (max-width: 768px) {
   .hero-buttons {
@@ -182,7 +200,6 @@ html, body {
   }
 }
 
-/* SMALL DEVICES */
 @media (max-width: 480px) {
   .hero-title {
     font-size: 1.9rem;
@@ -197,3 +214,4 @@ html, body {
     gap: 20px;
   }
 }
+

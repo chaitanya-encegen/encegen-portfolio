@@ -94,11 +94,10 @@
 }
 
 .card-content p {
-  font-size: 0.85rem;
+  line-height: 1.7;
+  letter-spacing: 0.3px;
+  color: #cbd5e1;
   text-align: left;
-  line-height: 1.6;
-  color: #cbd5f5;
-  word-break: break-all;
 }
 
 /* ========================= */
