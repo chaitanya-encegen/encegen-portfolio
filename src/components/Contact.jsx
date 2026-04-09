@@ -106,7 +106,9 @@ export default function Contact() {
             <FiPhone />
             <div>
               <h4>Phone</h4>
-              <p>+91 7769888952</p>
+              <p>+91 7030555126</p>
+              <p>+91 7030555123</p>
+              <p>+91 7030555120</p>
             </div>
           </div>
 
